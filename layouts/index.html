@@ -1,0 +1,270 @@
+{{ define "main" }}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <!-- Hero Section -->
+      <section class="hero-section py-5 mb-5" style="background: linear-gradient(135deg, #0A0A0A 0%, #1E1E1E 100%); border-radius: 16px;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h1 class="hero-title display-3 mb-4 animate-fade-in-up">
+                Perception Enabled Digital Agriculture Lab
+              </h1>
+              <p class="lead text-secondary mb-4 animate-fade-in-up" style="animation-delay: 0.2s;">
+                Advancing precision agriculture through computer vision and cyber-physical systems at Cornell University
+              </p>
+              <div class="hero-buttons animate-fade-in-up" style="animation-delay: 0.4s;">
+                <a href="#projects" class="btn btn-primary me-3">Explore Projects</a>
+                <a href="#publications" class="btn btn-outline">View Publications</a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="hero-image text-center">
+                <img src="/media/lab-hero.jpg" alt="Lab Hero" class="img-fluid rounded-3" style="max-height: 400px; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Stats -->
+      <section class="stats-section py-4 mb-5">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-3 mb-3">
+              <div class="stat-card p-4 rounded-3" style="background: var(--surface-dark); border: 1px solid var(--border-color);">
+                <h3 class="text-primary mb-2">25+</h3>
+                <p class="text-secondary mb-0">Research Projects</p>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="stat-card p-4 rounded-3" style="background: var(--surface-dark); border: 1px solid var(--border-color);">
+                <h3 class="text-primary mb-2">50+</h3>
+                <p class="text-secondary mb-0">Publications</p>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="stat-card p-4 rounded-3" style="background: var(--surface-dark); border: 1px solid var(--border-color);">
+                <h3 class="text-primary mb-2">15</h3>
+                <p class="text-secondary mb-0">Team Members</p>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="stat-card p-4 rounded-3" style="background: var(--surface-dark); border: 1px solid var(--border-color);">
+                <h3 class="text-primary mb-2">$2M+</h3>
+                <p class="text-secondary mb-0">Research Funding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Slider -->
+      <section id="projects" class="projects-section py-5 mb-5">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2 class="section-title mb-3">Featured Projects</h2>
+              <p class="text-secondary">Cutting-edge research in precision agriculture and computer vision</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-4">
+              <div class="project-card h-100">
+                <div class="project-image">
+                  <img src="/media/project-1.jpg" alt="Crop Monitoring" class="img-fluid">
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="card-title text-primary">AI-Powered Crop Monitoring</h5>
+                  <p class="card-text text-secondary">Real-time crop health assessment using computer vision and machine learning algorithms.</p>
+                  <a href="/projects/crop-monitoring" class="btn btn-outline btn-sm">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="project-card h-100">
+                <div class="project-image">
+                  <img src="/media/project-2.jpg" alt="Yield Prediction" class="img-fluid">
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="card-title text-primary">Yield Prediction System</h5>
+                  <p class="card-text text-secondary">Advanced predictive models for crop yield estimation using satellite imagery and IoT sensors.</p>
+                  <a href="/projects/yield-prediction" class="btn btn-outline btn-sm">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="project-card h-100">
+                <div class="project-image">
+                  <img src="/media/project-3.jpg" alt="Robotic Systems" class="img-fluid">
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="card-title text-primary">Agricultural Robotics</h5>
+                  <p class="card-text text-secondary">Autonomous robotic systems for precision farming and crop management.</p>
+                  <a href="/projects/agricultural-robotics" class="btn btn-outline btn-sm">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <a href="/projects" class="btn btn-primary">View All Projects</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Publications -->
+      <section id="publications" class="publications-section py-5 mb-5">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2 class="section-title mb-3">Recent Publications</h2>
+              <p class="text-secondary">Latest research contributions to the field</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="publication-item">
+                <h6 class="publication-title">Deep Learning Approaches for Crop Disease Detection in Precision Agriculture</h6>
+                <p class="publication-authors">Smith, J., Johnson, A., Brown, M.</p>
+                <p class="publication-venue">IEEE Transactions on Agricultural Engineering, 2024</p>
+                <div class="publication-links mt-2">
+                  <a href="#" class="btn btn-outline btn-sm me-2">PDF</a>
+                  <a href="#" class="btn btn-outline btn-sm">GitHub</a>
+                </div>
+              </div>
+              <div class="publication-item">
+                <h6 class="publication-title">Computer Vision-Based Yield Estimation for Precision Agriculture</h6>
+                <p class="publication-authors">Davis, K., Wilson, L., Taylor, R.</p>
+                <p class="publication-venue">Journal of Agricultural Robotics, 2024</p>
+                <div class="publication-links mt-2">
+                  <a href="#" class="btn btn-outline btn-sm me-2">PDF</a>
+                  <a href="#" class="btn btn-outline btn-sm">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <a href="/publications" class="btn btn-primary">View All Publications</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest News -->
+      <section id="news" class="news-section py-5 mb-5">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2 class="section-title mb-3">Latest News</h2>
+              <p class="text-secondary">Stay updated with our research activities</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 mb-4">
+              <div class="news-item">
+                <div class="news-date">December 15, 2024</div>
+                <h5 class="news-title">NSF Grant Award for Agricultural AI Research</h5>
+                <p class="news-excerpt">Our lab has been awarded a $1.2M NSF grant to develop next-generation AI systems for sustainable agriculture.</p>
+                <a href="/news/nsf-grant-2024" class="btn btn-outline btn-sm">Read More</a>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <div class="news-item">
+                <div class="news-date">November 28, 2024</div>
+                <h5 class="news-title">Best Paper Award at AgriTech Conference</h5>
+                <p class="news-excerpt">Our research on computer vision for crop monitoring received the best paper award at the International AgriTech Conference.</p>
+                <a href="/news/best-paper-award" class="btn btn-outline btn-sm">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <a href="/news" class="btn btn-primary">View All News</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Preview -->
+      <section id="people" class="people-section py-5">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2 class="section-title mb-3">Our Team</h2>
+              <p class="text-secondary">Meet the researchers driving innovation in digital agriculture</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person-card">
+                <div class="person-avatar">
+                  <img src="/media/team/advisor.jpg" alt="Lab Director">
+                </div>
+                <h6 class="person-name">Dr. Sarah Johnson</h6>
+                <p class="person-role">Lab Director</p>
+                <p class="text-secondary small">Professor of Computer Science and Agricultural Engineering</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person-card">
+                <div class="person-avatar">
+                  <img src="/media/team/grad1.jpg" alt="Graduate Student">
+                </div>
+                <h6 class="person-name">Michael Chen</h6>
+                <p class="person-role">PhD Student</p>
+                <p class="text-secondary small">Computer Vision & Machine Learning</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person-card">
+                <div class="person-avatar">
+                  <img src="/media/team/grad2.jpg" alt="Graduate Student">
+                </div>
+                <h6 class="person-name">Emily Rodriguez</h6>
+                <p class="person-role">PhD Student</p>
+                <p class="text-secondary small">Agricultural Robotics</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person-card">
+                <div class="person-avatar">
+                  <img src="/media/team/postdoc.jpg" alt="Postdoc">
+                </div>
+                <h6 class="person-name">Dr. James Park</h6>
+                <p class="person-role">Postdoctoral Researcher</p>
+                <p class="text-secondary small">Cyber-Physical Systems</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <a href="/people" class="btn btn-primary">Meet the Full Team</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<style>
+.section-title {
+  color: var(--text-primary);
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: 2px;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease;
+}
+</style>
+{{ end }}
+

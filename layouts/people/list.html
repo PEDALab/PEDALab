@@ -1,0 +1,118 @@
+{{ define "main" }}
+<div class="container-fluid py-5">
+  <div class="container">
+    <!-- Page Header -->
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h1 class="page-title display-4 mb-3">{{ .Title }}</h1>
+        <p class="lead text-secondary">Meet the dedicated researchers and students of our lab</p>
+      </div>
+    </div>
+
+    <!-- Advisor Section -->
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h2 class="section-title mb-4">Advisor</h2>
+      </div>
+      {{ range where .Site.RegularPages "Params.role" "advisor" }}
+      <div class="col-lg-4 col-md-6 mb-4 mx-auto">
+        <div class="card text-center person-card">
+          <div class="card-body p-4">
+            <div class="mb-3">
+              <img src="{{ .Params.image | default "/media/team/default.jpg" }}" alt="{{ .Title }}" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid var(--primary-color);">
+            </div>
+            <h5 class="card-title text-primary mb-1"><a href="{{ .Permalink }}" class="text-decoration-none text-primary">{{ .Title }}</a></h5>
+            <p class="text-success mb-2"><strong>{{ .Params.position | default "Advisor" }}</strong></p>
+            <p class="text-secondary small">{{ .Params.bio | default "" }}</p>
+            {{ if .Params.email }}
+            <a href="mailto:{{ .Params.email }}" class="btn btn-outline btn-sm mt-2">Contact</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <!-- Graduate Students Section -->
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h2 class="section-title mb-4">Graduate Students</h2>
+      </div>
+      {{ range where .Site.RegularPages "Params.role" "graduate-student" }}
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card text-center person-card">
+          <div class="card-body p-4">
+            <div class="mb-3">
+              <img src="{{ .Params.image | default "/media/team/default.jpg" }}" alt="{{ .Title }}" class="rounded-circle" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid var(--primary-color);">
+            </div>
+            <h6 class="card-title text-primary mb-1"><a href="{{ .Permalink }}" class="text-decoration-none text-primary">{{ .Title }}</a></h6>
+            <p class="text-success mb-2"><strong>{{ .Params.position | default "Graduate Student" }}</strong></p>
+            <p class="text-secondary small">{{ .Params.research_area | default "" }}</p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <!-- Undergraduate Students Section -->
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h2 class="section-title mb-4">Undergraduate Students</h2>
+      </div>
+      {{ range where .Site.RegularPages "Params.role" "undergraduate-student" }}
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card text-center person-card">
+          <div class="card-body p-4">
+            <div class="mb-3">
+              <img src="{{ .Params.image | default "/media/team/default.jpg" }}" alt="{{ .Title }}" class="rounded-circle" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid var(--primary-color);">
+            </div>
+            <h6 class="card-title text-primary mb-1"><a href="{{ .Permalink }}" class="text-decoration-none text-primary">{{ .Title }}</a></h6>
+            <p class="text-success mb-2"><strong>{{ .Params.position | default "Undergraduate Student" }}</strong></p>
+            <p class="text-secondary small">{{ .Params.research_area | default "" }}</p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <!-- Alumni Section -->
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title mb-4">Alumni</h2>
+      </div>
+      {{ range where .Site.RegularPages "Params.role" "alumni" }}
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card text-center person-card">
+          <div class="card-body p-4">
+            <div class="mb-3">
+              <img src="{{ .Params.image | default "/media/team/default.jpg" }}" alt="{{ .Title }}" class="rounded-circle" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid var(--primary-color);">
+            </div>
+            <h6 class="card-title text-primary mb-1"><a href="{{ .Permalink }}" class="text-decoration-none text-primary">{{ .Title }}</a></h6>
+            <p class="text-success mb-2"><strong>{{ .Params.position | default "Alumni" }}</strong></p>
+            <p class="text-secondary small">{{ .Params.current_affiliation | default "" }}</p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<style>
+.person-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
+}
+
+.person-card img {
+  border: 4px solid var(--primary-color);
+}
+</style>
+{{ end }}
+

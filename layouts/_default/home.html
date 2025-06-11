@@ -1,0 +1,456 @@
+{{ define "main" }}
+<!-- Debug output -->
+<div style="display: none;">
+    Debug: Title = {{ .Title }}
+    Debug: Params = {{ .Params }}
+    Debug: Content = {{ .Content }}
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <!-- Hero Section -->
+            <section class="hero-section py-5 mb-5" style="background: linear-gradient(135deg, #0A0A0A 0%, #1E1E1E 100%); border-radius: 16px;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <h1 class="hero-title display-3 mb-4 animate-fade-in-up">
+                                {{ .Title }}
+                            </h1>
+                            <p class="lead text-secondary mb-4 animate-fade-in-up" style="animation-delay: 0.2s;">
+                                {{ .Params.hero.text }}
+                            </p>
+                            <div class="hero-buttons animate-fade-in-up" style="animation-delay: 0.4s;">
+                                {{ range .Params.hero.buttons }}
+                                <a href="{{ .link }}" class="btn {{ if eq .text "Explore Projects" }}btn-primary{{ else }}btn-outline{{ end }} me-3">{{ .text }}</a>
+                                {{ end }}
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="hero-image text-center">
+                                <img src="{{ .Params.hero.image }}" alt="Lab Hero" class="img-fluid rounded-3" style="max-height: 400px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation Carousel -->
+            <section class="navigation-carousel-section py-4 mb-5">
+                <div class="container">
+                    <div id="navigationCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Carousel Items -->
+                        <div class="carousel-inner">
+                            {{ range $index, $slide := .Params.carousel_slides }}
+                            <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
+                                <div class="carousel-content text-center" style="background-image: url('{{ relURL $slide.image }}');">
+                                    <div class="content-overlay">
+                                        <h2 class="mb-4">{{ $slide.title }}</h2>
+                                        <p class="lead mb-4">{{ $slide.description }}</p>
+                                        <a href="{{ $slide.link }}" class="nav-button">{{ $slide.button_text }}</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{ end }}
+                        </div>
+
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            {{ range $index, $slide := .Params.carousel_slides }}
+                            <button type="button" data-bs-target="#navigationCarousel" data-bs-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active" aria-current="true"{{ end }} aria-label="{{ $slide.title }}"></button>
+                            {{ end }}
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#navigationCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#navigationCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Projects -->
+            <section id="projects" class="projects-section py-5 mb-5">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-12 text-center">
+                            <h2 class="section-title mb-3">Featured Projects</h2>
+                            <p class="text-secondary">Cutting-edge research in precision agriculture and computer vision</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{ range .Params.featured_projects }}
+                            {{ with $.Site.GetPage .path }}
+                            <div class="col-lg-4 mb-4">
+                                <div class="project-card h-100">
+                                    <div class="project-image" style="height: 200px; overflow: hidden;">
+                                        {{ with .Params.image }}
+                                        <img src="{{ printf "/media/projects/%s" .filename }}" alt="{{ $.Title }}" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                        {{ else }}
+                                        <img src="/media/projects/default.jpg" alt="{{ $.Title }}" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                        {{ end }}
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title text-primary">{{ .Title }}</h5>
+                                        <p class="card-text text-secondary">{{ .Summary }}</p>
+                                        <a href="{{ .RelPermalink }}" class="btn btn-outline btn-sm">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="/projects" class="btn btn-primary">View All Projects</a>
+                    </div>
+                </div>
+            </section>
+
+            <style>
+            .project-card {
+                transition: all 0.3s ease;
+                border: 1px solid var(--border-color);
+                background: var(--surface-dark);
+            }
+
+            .project-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 30px rgba(46, 125, 50, 0.3);
+                border-color: var(--primary-color);
+            }
+
+            .project-image {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .project-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+            }
+
+            .project-card:hover .project-image img {
+                transform: scale(1.1);
+            }
+
+            .carousel-content {
+                padding: 60px 20px;
+                background: var(--surface-dark);
+                border-radius: 16px;
+                border: 1px solid var(--border-color);
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+            }
+
+            .content-overlay {
+                background: rgba(0, 0, 0, 0.7);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 60px 20px;
+                border-radius: 16px;
+            }
+
+            .carousel-content h2 {
+                color: white;
+                font-size: 2.5rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                position: relative;
+                z-index: 2;
+                line-height: 1.2;
+            }
+
+            .carousel-content .lead {
+                color: rgba(255, 255, 255, 0.9);
+                max-width: 600px;
+                margin: 0 auto 2rem;
+                height: auto;
+                min-height: 48px;
+                line-height: 1.5;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                position: relative;
+                z-index: 2;
+            }
+
+            .carousel-indicators {
+                margin-bottom: 1rem;
+            }
+
+            .carousel-indicators button {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: var(--border-color);
+                margin: 0 6px;
+            }
+
+            .carousel-indicators button.active {
+                background-color: var(--primary-color);
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                width: 5%;
+                opacity: 0.8;
+            }
+
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                background-color: var(--primary-color);
+                border-radius: 50%;
+                padding: 20px;
+            }
+
+            .nav-button {
+                position: relative;
+                z-index: 2;
+                display: inline-block;
+                min-width: 200px;
+                padding: 15px 30px;
+                background: transparent;
+                border: 2px solid var(--primary-color);
+                color: var(--primary-color);
+                font-weight: 500;
+                text-decoration: none;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+            }
+
+            .nav-button:hover {
+                background-color: var(--primary-color);
+                color: white;
+                transform: translateY(-2px);
+                box-shadow: 0 10px 20px rgba(46, 125, 50, 0.3);
+                text-decoration: none;
+            }
+
+            #navigationCarousel {
+                margin: 0 auto;
+            }
+
+            .carousel-item {
+                height: 300px;
+            }
+            </style>
+
+            <!-- Recent Publications -->
+            <section id="publications" class="publications-section py-5 mb-5">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-12 text-center">
+                            <h2 class="section-title mb-3">Recent Publications</h2>
+                            <p class="text-secondary">Latest research contributions to the field</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            {{ range .Params.featured_publications }}
+                                {{ with $.Site.GetPage .path }}
+                                <div class="card mb-4 publication-item">
+                                    <div class="row g-0">
+                                        <div class="col-md-10">
+                                            <div class="card-body p-4">
+                                                <h5 class="card-title text-primary mb-2">{{ .Title }}</h5>
+                                                <p class="text-secondary mb-1"><em>{{ delimit .Params.authors ", " }}</em></p>
+                                                <p class="text-success mb-2"><strong>{{ .Params.publication | default "" }}</strong>, {{ .PublishDate.Format "2006" }}</p>
+                                                <p class="card-text text-secondary mb-3">{{ .Params.summary | default .Summary }}</p>
+                                                <div class="publication-links">
+                                                    {{ if .Params.url_pdf }}
+                                                    <a href="{{ .Params.url_pdf }}" class="btn btn-outline btn-sm me-2" target="_blank" rel="noopener">PDF</a>
+                                                    {{ end }}
+                                                    {{ if .Params.url_code }}
+                                                    <a href="{{ .Params.url_code }}" class="btn btn-outline btn-sm me-2" target="_blank" rel="noopener">GitHub</a>
+                                                    {{ end }}
+                                                    {{ if .Params.url_project }}
+                                                    <a href="{{ .Params.url_project }}" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Project Page</a>
+                                                    {{ end }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="publication-image h-100 p-4">
+                                                {{ with .Params.image }}
+                                                <img src="{{ printf "/media/publications/%s" .filename }}" alt="{{ $.Title }}" class="img-fluid h-100 w-100 rounded" style="object-fit: cover;">
+                                                {{ else }}
+                                                <img src="/media/publications/default.jpg" alt="{{ $.Title }}" class="img-fluid h-100 w-100 rounded" style="object-fit: cover;">
+                                                {{ end }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="/publications" class="btn btn-primary">View All Publications</a>
+                    </div>
+                </div>
+            </section>
+
+            <style>
+            .publication-item {
+                border-left: 5px solid var(--primary-color);
+                border-radius: 8px;
+                overflow: hidden;
+                transition: all 0.3s ease;
+            }
+
+            .publication-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
+            }
+
+            .publication-links a {
+                margin-right: 0.5rem;
+            }
+
+            .publication-image {
+                position: relative;
+                overflow: hidden;
+                height: 100%;
+            }
+
+            .publication-image img {
+                transition: transform 0.3s ease;
+            }
+
+            .publication-item:hover .publication-image img {
+                transform: scale(1.1);
+            }
+            </style>
+
+            <!-- Latest News -->
+            <section id="news" class="news-section py-5 mb-5">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-12 text-center">
+                            <h2 class="section-title mb-3">Latest News</h2>
+                            <p class="text-secondary">Stay updated with our research activities</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{ range first 2 (where .Site.RegularPages "Section" "news") }}
+                        <div class="col-lg-6 mb-4">
+                            <div class="card news-item">
+                                <div class="row g-0">
+                                    <div class="col-md-9">
+                                        <div class="card-body">
+                                            <div class="text-success mb-2"><small>{{ .PublishDate.Format "January 2, 2006" }}</small></div>
+                                            <h5 class="card-title text-primary">{{ .Title }}</h5>
+                                            <p class="card-text text-secondary">{{ .Summary }}</p>
+                                            <a href="{{ .Permalink }}" class="btn btn-outline btn-sm">Read More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="news-image h-100 p-4">
+                                            {{ with .Params.image }}
+                                            <img src="{{ printf "/media/news/%s" .filename }}" alt="{{ $.Title }}" class="img-fluid h-100 w-100 rounded" style="object-fit: cover;">
+                                            {{ else }}
+                                            <img src="/media/news/default.jpg" alt="{{ $.Title }}" class="img-fluid h-100 w-100 rounded" style="object-fit: cover;">
+                                            {{ end }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="/news" class="btn btn-outline">View All News</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Preview -->
+            <section id="people" class="people-section py-5">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-12 text-center">
+                            <h2 class="section-title mb-3">Our Team</h2>
+                            <p class="text-secondary">Meet the researchers driving innovation in digital agriculture</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{ range .Params.featured_team }}
+                            {{ with $.Site.GetPage .path }}
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card text-center">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <img src="{{ .Params.image | default "/media/team/default.jpg" }}" alt="{{ .Title }}" class="rounded-circle" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid var(--primary-color);">
+                                        </div>
+                                        <h6 class="card-title text-primary">
+                                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                                        </h6>
+                                        <p class="text-success mb-2"><strong>{{ .Params.role }}</strong></p>
+                                        <p class="text-secondary small">{{ .Params.title }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="/people" class="btn btn-primary">View All Team Members</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+
+<style>
+.news-item {
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(76, 175, 80, 0.2);
+}
+
+.news-image {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.news-image img {
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover .news-image img {
+    transform: scale(1.1);
+}
+</style>
+{{ end }}
+
+

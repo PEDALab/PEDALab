@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Perception Enabled Digital Agriculture Lab</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Perception Enabled Digital Agriculture Lab</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computer Vision</title>
+      <link>http://localhost:1313/tag/computer-vision/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tag/computer-vision/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deep Learning</title>
+      <link>http://localhost:1313/tag/deep-learning/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tag/deep-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Precision Agriculture</title>
+      <link>http://localhost:1313/tag/precision-agriculture/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tag/precision-agriculture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Robotics</title>
+      <link>http://localhost:1313/tag/robotics/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tag/robotics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Yield Estimation</title>
+      <link>http://localhost:1313/tag/yield-estimation/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tag/yield-estimation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CNN</title>
+      <link>http://localhost:1313/tag/cnn/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tag/cnn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crop Disease Detection</title>
+      <link>http://localhost:1313/tag/crop-disease-detection/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tag/crop-disease-detection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crop Health</title>
+      <link>http://localhost:1313/tag/crop-health/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tag/crop-health/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Disease Detection</title>
+      <link>http://localhost:1313/tag/disease-detection/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tag/disease-detection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine Learning</title>
+      <link>http://localhost:1313/tag/machine-learning/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tag/machine-learning/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

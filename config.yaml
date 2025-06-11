@@ -1,0 +1,129 @@
+baseURL: 'https://jdnqcpdy.manus.space/'
+languageCode: 'en-us'
+title: 'Perception Enabled Digital Agriculture Lab'
+theme: 'blox-tailwind'
+
+# Configuration of Hugo
+# Guide: https://docs.hugoblox.com/tutorial/
+# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+
+# Site settings
+params:
+  # Site features
+  features:
+    syntax_highlighter:
+      enable: true
+      extra_languages:
+        - r
+        - latex
+    math:
+      enable: true
+    privacy_pack:
+      enable: false
+  # Localization
+  locale:
+    date_format: 'Jan 2, 2006'
+    time_format: '3:04 PM'
+    address_format: en-us
+  # Site header
+  header:
+    navbar:
+      enable: true
+      align: l
+      show_logo: true
+      show_language: false
+      show_day_night: true
+      show_search: true
+      highlight_active_link: true
+  # Site footer
+  footer:
+    copyright:
+      notice: '© {year} Perception Enabled Digital Agriculture Lab. This work is licensed under {license}'
+      license:
+        enable: true
+        allow_derivatives: false
+        share_alike: true
+        allow_commercial: false
+
+# Default image for social sharing and search engines
+images: ['featured.jpg']
+
+# Security
+security:
+  _merge: deep
+
+# Markup
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    lineNos: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+
+# Taxonomies
+taxonomies:
+  tag: tags
+  category: categories
+  publication_type: publication_types
+  author: authors
+
+# Related content
+related:
+  threshold: 80
+  includeNewer: true
+  toLower: true
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 70
+
+# Permalinks
+permalinks:
+  authors: '/author/:slug/'
+  tags: '/tag/:slug/'
+  categories: '/category/:slug/'
+  publication_types: '/publication-type/:slug/'
+
+# Disqus
+disqusShortname: ''
+
+# Google Analytics
+googleAnalytics: ''
+
+# Default language
+defaultContentLanguage: en
+hasCJKLanguage: false
+defaultContentLanguageInSubdir: false
+removePathAccents: true
+
+# Configure the English version of the site.
+languages:
+  en:
+    languageCode: 'en-us'
+    menu:
+      main:
+        - name: Home
+          url: '/'
+          weight: 1
+        - name: Projects
+          url: '/projects/'
+          weight: 2
+        - name: Publications
+          url: '/publications/'
+          weight: 3
+        - name: News
+          url: '/news/'
+          weight: 4
+        - name: Team
+          url: '/people/'
+          weight: 5
+        - name: Learning
+          url: '/courses/'
+          weight: 6
+
+

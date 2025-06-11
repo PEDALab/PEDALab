@@ -1,0 +1,84 @@
+{{ define "main" }}
+<div class="container-fluid py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <article>
+          <header class="text-center mb-5">
+            <img src="{{ .Params.image | default "/media/team/default.jpg" }}" alt="{{ .Title }}" class="rounded-circle mb-4" style="width: 200px; height: 200px; object-fit: cover; border: 5px solid var(--primary-color);">
+            <h1 class="display-4 mb-2">{{ .Title }}</h1>
+            <p class="lead text-success mb-3">{{ .Params.position | default "" }}</p>
+            <p class="text-secondary">{{ .Params.bio | default "" }}</p>
+            {{ if .Params.email }}
+            <a href="mailto:{{ .Params.email }}" class="btn btn-outline btn-sm mt-3">Contact {{ .Title }}</a>
+            {{ end }}
+          </header>
+          <div class="article-content text-secondary">
+            {{ .Content }}
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.article-content h2, .article-content h3, .article-content h4, .article-content h5, .article-content h6 {
+  color: var(--text-primary);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.article-content p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.article-content ul, .article-content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+}
+
+.article-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.article-content a:hover {
+  text-decoration: underline;
+}
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article-content blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1rem;
+  margin-left: 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.article-content pre {
+  background-color: var(--surface-dark);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.article-content code {
+  font-family: "Fira Code", "Cascadia Code", monospace;
+  color: var(--accent-color);
+}
+</style>
+{{ end }}
+

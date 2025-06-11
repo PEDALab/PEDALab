@@ -1,0 +1,86 @@
+{{ define "main" }}
+<div class="container-fluid py-5">
+  <div class="container">
+    <!-- Page Header -->
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h1 class="page-title display-4 mb-3">{{ .Title }}</h1>
+        <p class="lead text-secondary">Explore our latest research publications</p>
+      </div>
+    </div>
+
+    <!-- Publications List -->
+    <div class="row">
+      <div class="col-12">
+        {{ range .Pages.ByPublishDate.Reverse }}
+        <div class="card mb-4 publication-item">
+          <div class="row g-0">
+            <div class="col-md-10">
+              <div class="card-body p-4">
+                <h5 class="card-title text-primary mb-2">{{ .Title }}</h5>
+                <p class="text-secondary mb-1"><em>{{ delimit .Params.authors ", " }}</em></p>
+                <p class="text-success mb-2"><strong>{{ .Params.publication | default "" }}</strong>, {{ .PublishDate.Format "2006" }}</p>
+                <p class="card-text text-secondary mb-3">{{ .Params.summary | default .Summary }}</p>
+                <div class="publication-links">
+                  {{ if .Params.url_pdf }}
+                  <a href="{{ .Params.url_pdf }}" class="btn btn-outline btn-sm me-2" target="_blank" rel="noopener">PDF</a>
+                  {{ end }}
+                  {{ if .Params.url_code }}
+                  <a href="{{ .Params.url_code }}" class="btn btn-outline btn-sm me-2" target="_blank" rel="noopener">GitHub</a>
+                  {{ end }}
+                  {{ if .Params.url_project }}
+                  <a href="{{ .Params.url_project }}" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Project Page</a>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="publication-image h-100 p-4">
+                {{ with .Params.image }}
+                <img src="{{ printf "/media/publications/%s" .filename }}" alt="{{ $.Title }}" class="img-fluid h-100 w-100 rounded" style="object-fit: cover;">
+                {{ else }}
+                <img src="/media/publications/default.jpg" alt="{{ $.Title }}" class="img-fluid h-100 w-100 rounded" style="object-fit: cover;">
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.publication-item {
+  border-left: 5px solid var(--primary-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.publication-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
+}
+
+.publication-links a {
+  margin-right: 0.5rem;
+}
+
+.publication-image {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.publication-image img {
+  transition: transform 0.3s ease;
+}
+
+.publication-item:hover .publication-image img {
+  transform: scale(1.1);
+}
+</style>
+{{ end }}
+

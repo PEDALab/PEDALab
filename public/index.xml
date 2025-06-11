@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Perception Enabled Digital Agriculture Lab</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Perception Enabled Digital Agriculture Lab</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lab Receives New Grant for AI in Agriculture</title>
+      <link>http://localhost:1313/news/new-grant-2025/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/new-grant-2025/</guid>
+      <description>Our lab has been awarded a significant new grant to advance research in artificial intelligence applications for sustainable agriculture.</description>
+    </item>
+    <item>
+      <title>Computer Vision-Based Yield Estimation for Precision Agriculture</title>
+      <link>http://localhost:1313/publications/computer-vision-yield-estimation-2024/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/computer-vision-yield-estimation-2024/</guid>
+      <description>A computer vision-based deep learning model for accurate and non-invasive crop yield estimation using drone and ground-based imagery, achieving 0.92 R-squared.</description>
+    </item>
+    <item>
+      <title>Deep Learning Approaches for Crop Disease Detection in Precision Agriculture</title>
+      <link>http://localhost:1313/publications/deep-learning-crop-disease-2024/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/deep-learning-crop-disease-2024/</guid>
+      <description>A deep learning framework achieving 95.3% accuracy in automated crop disease detection using CNNs with attention mechanisms, validated through extensive field trials.</description>
+    </item>
+    <item>
+      <title>AI-Powered Crop Monitoring</title>
+      <link>http://localhost:1313/projects/crop-monitoring/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/crop-monitoring/</guid>
+      <description>Real-time crop health assessment using computer vision and machine learning algorithms to detect diseases, pests, and nutrient deficiencies.</description>
+    </item>
+    <item>
+      <title>CS 5787: Computer Vision for Agriculture</title>
+      <link>http://localhost:1313/courses/cs5787/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/courses/cs5787/</guid>
+      <description>Advanced topics in computer vision techniques applied to agricultural challenges, including crop phenotyping, disease detection, and yield estimation.</description>
+    </item>
+    <item>
+      <title>Dr. Sarah Johnson</title>
+      <link>http://localhost:1313/people/sarah-johnson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/people/sarah-johnson/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

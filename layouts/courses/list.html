@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div class="container-fluid py-5">
+  <div class="container">
+    <!-- Page Header -->
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h1 class="page-title display-4 mb-3">{{ .Title }}</h1>
+        <p class="lead text-secondary">{{ .Content }}</p>
+      </div>
+    </div>
+
+    <!-- Course Listings -->
+    <div class="row">
+      <div class="col-12">
+        {{ range .Pages.ByTitle }}
+        <div class="card mb-4 course-item">
+          <div class="card-body p-4">
+            <h5 class="card-title text-primary mb-2">{{ .Title }}</h5>
+            <p class="text-success mb-2"><strong>Course Code:</strong> {{ .Params.course_code | default "N/A" }}</p>
+            <p class="text-secondary mb-3">{{ .Summary }}</p>
+            <div class="course-details">
+              <p class="mb-1"><strong>Semester:</strong> {{ .Params.semester | default "N/A" }}</p>
+              <p class="mb-1"><strong>Credits:</strong> {{ .Params.credits | default "N/A" }}</p>
+              {{ if .Params.syllabus_url }}
+              <a href="{{ .Params.syllabus_url }}" class="btn btn-outline btn-sm mt-2" target="_blank" rel="noopener">View Syllabus</a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.course-item {
+  border-left: 5px solid var(--accent-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.course-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(129, 199, 132, 0.2);
+}
+</style>
+{{ end }}
+

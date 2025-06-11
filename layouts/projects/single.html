@@ -1,0 +1,166 @@
+{{ define "main" }}
+<div class="container-fluid py-5">
+  <div class="container">
+    <!-- Project Header -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/projects">Projects</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Project Content -->
+      <div class="col-lg-8">
+        <div class="project-header mb-4">
+          <h1 class="display-4 mb-3">{{ .Title }}</h1>
+          <div class="project-meta mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-calendar me-2"></i>
+              <span>{{ .Date.Format "January 2006" }} - Present</span>
+            </div>
+            <div class="project-tags">
+              {{ range .Params.tags }}
+              <span class="badge bg-primary me-2">{{ . }}</span>
+              {{ end }}
+            </div>
+          </div>
+          {{ if .Params.image }}
+          <div class="project-image mb-4">
+            <img src="{{ .Params.image.filename | relURL }}" alt="{{ .Title }}" class="img-fluid rounded">
+          </div>
+          {{ end }}
+        </div>
+
+        <div class="project-content">
+          {{ .Content }}
+        </div>
+      </div>
+
+      <!-- Project Sidebar -->
+      <div class="col-lg-4">
+        <div class="project-sidebar">
+          <!-- Team Members -->
+          {{ if .Params.team_members }}
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Team Members</h5>
+              <ul class="list-unstyled">
+                {{ range .Params.team_members }}
+                <li class="mb-2">
+                  <strong>{{ .name }}</strong>
+                  <br>
+                  <small class="text-muted">{{ .role }}</small>
+                </li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+          {{ end }}
+
+          <!-- Project Links -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Project Links</h5>
+              <div class="d-grid gap-2">
+                {{ with .Params.github }}
+                <a href="{{ . }}" class="btn btn-outline-primary" target="_blank" rel="noopener">
+                  <i class="fab fa-github me-2"></i>GitHub Repository
+                </a>
+                {{ end }}
+                {{ with .Params.documentation }}
+                <a href="{{ . }}" class="btn btn-outline-primary" target="_blank" rel="noopener">
+                  <i class="fas fa-book me-2"></i>Documentation
+                </a>
+                {{ end }}
+                {{ with .Params.demo }}
+                <a href="{{ . }}" class="btn btn-outline-primary" target="_blank" rel="noopener">
+                  <i class="fas fa-play me-2"></i>Live Demo
+                </a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+
+          <!-- Related Publications -->
+          {{ $related_pubs := where (where site.Pages "Type" "publications") ".Params.projects" "intersect" (slice .File.ContentBaseName) }}
+          {{ if $related_pubs }}
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Related Publications</h5>
+              <ul class="list-unstyled">
+                {{ range $related_pubs }}
+                <li class="mb-2">
+                  <a href="{{ .RelPermalink }}" class="text-decoration-none">
+                    <strong>{{ .Title }}</strong>
+                  </a>
+                  <br>
+                  <small class="text-muted">{{ .Params.journal }}</small>
+                </li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.project-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.project-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.project-sidebar .card {
+  border: 1px solid var(--border-color);
+  background: var(--surface-dark);
+}
+
+.project-sidebar .card-title {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: var(--text-secondary);
+}
+</style>
+{{ end }} 

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI-Powered Crop Monitoring | Perception Enabled Digital Agriculture Lab</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="http://localhost:1313/scss/custom.css">
+    
+    <style>
+        :root {
+            --primary-color: #2E7D32;
+            --secondary-color: #4CAF50;
+            --accent-color: #81C784;
+            --background-dark: #121212;
+            --background-darker: #0A0A0A;
+            --surface-dark: #1E1E1E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+            --border-color: #333333;
+        }
+        
+        body {
+            background-color: var(--background-dark) !important;
+            color: var(--text-primary) !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background-color: var(--background-darker) !important;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .navbar-brand {
+            color: var(--primary-color) !important;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .navbar-nav .nav-link {
+            color: var(--text-primary) !important;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+        
+        .hero-title {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+        }
+        
+        .btn-outline {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        
+        .card, .project-card, .stat-card {
+            background-color: var(--surface-dark) !important;
+            border: 1px solid var(--border-color) !important;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover, .project-card:hover, .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(46, 125, 50, 0.2);
+        }
+        
+        .section-title {
+            color: var(--text-primary);
+            font-weight: 700;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+        
+        .footer {
+            background-color: var(--background-darker) !important;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            margin-top: 4rem;
+            padding: 2rem 0;
+        }
+        
+        .footer a {
+            color: var(--secondary-color);
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            color: var(--accent-color);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="http://localhost:1313/">
+                <i class="fas fa-seedling me-2"></i>
+                Perception Enabled Digital Agriculture Lab
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects/">Projects</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/publications/">Publications</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news/">News</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/people/">Team</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/courses/">Learning</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main>
+        
+<div class="container-fluid py-5">
+  <div class="container">
+    
+    <div class="row mb-5">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/projects">Projects</a></li>
+            <li class="breadcrumb-item active" aria-current="page">AI-Powered Crop Monitoring</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      
+      <div class="col-lg-8">
+        <div class="project-header mb-4">
+          <h1 class="display-4 mb-3">AI-Powered Crop Monitoring</h1>
+          <div class="project-meta mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-calendar me-2"></i>
+              <span>January 2023 - Present</span>
+            </div>
+            <div class="project-tags">
+              
+              <span class="badge bg-primary me-2">Computer Vision</span>
+              
+              <span class="badge bg-primary me-2">Machine Learning</span>
+              
+              <span class="badge bg-primary me-2">Crop Health</span>
+              
+              <span class="badge bg-primary me-2">Disease Detection</span>
+              
+            </div>
+          </div>
+          
+          <div class="project-image mb-4">
+            <img src="/crop-monitoring.jpg" alt="AI-Powered Crop Monitoring" class="img-fluid rounded">
+          </div>
+          
+        </div>
+
+        <div class="project-content">
+          <h2 id="project-overview">Project Overview</h2>
+<p>Our AI-powered crop monitoring system represents a breakthrough in precision agriculture technology. By combining advanced computer vision algorithms with machine learning models, we have developed a comprehensive solution for real-time crop health assessment that can detect diseases, pests, and nutrient deficiencies with unprecedented accuracy.</p>
+<h2 id="key-features">Key Features</h2>
+<h3 id="computer-vision-analysis">Computer Vision Analysis</h3>
+<ul>
+<li><strong>Real-time Image Processing</strong>: Advanced algorithms process drone and satellite imagery in real-time</li>
+<li><strong>Multi-spectral Analysis</strong>: Utilizes RGB, NIR, and thermal imaging for comprehensive crop assessment</li>
+<li><strong>Disease Detection</strong>: Automated identification of common crop diseases with 95% accuracy</li>
+<li><strong>Pest Monitoring</strong>: Early detection of pest infestations before visible damage occurs</li>
+</ul>
+<h3 id="machine-learning-models">Machine Learning Models</h3>
+<ul>
+<li><strong>Deep Neural Networks</strong>: Custom CNN architectures trained on extensive agricultural datasets</li>
+<li><strong>Transfer Learning</strong>: Leveraging pre-trained models for faster deployment across different crop types</li>
+<li><strong>Continuous Learning</strong>: Models improve over time with new data from field deployments</li>
+<li><strong>Predictive Analytics</strong>: Forecasting potential issues before they become critical</li>
+</ul>
+<h2 id="technical-implementation">Technical Implementation</h2>
+<h3 id="hardware-components">Hardware Components</h3>
+<ul>
+<li>High-resolution multispectral cameras</li>
+<li>Edge computing devices for real-time processing</li>
+<li>IoT sensors for environmental monitoring</li>
+<li>Drone platforms for aerial surveillance</li>
+</ul>
+<h3 id="software-architecture">Software Architecture</h3>
+<ul>
+<li><strong>Backend</strong>: Python-based ML pipeline using TensorFlow and PyTorch</li>
+<li><strong>Frontend</strong>: React-based dashboard for farmers and researchers</li>
+<li><strong>Database</strong>: PostgreSQL for storing crop data and analysis results</li>
+<li><strong>API</strong>: RESTful services for integration with existing farm management systems</li>
+</ul>
+<h2 id="research-impact">Research Impact</h2>
+<h3 id="publications">Publications</h3>
+<ol>
+<li>&ldquo;Deep Learning Approaches for Crop Disease Detection&rdquo; - IEEE Transactions on Agricultural Engineering (2024)</li>
+<li>&ldquo;Multi-spectral Image Analysis for Precision Agriculture&rdquo; - Journal of Agricultural Robotics (2023)</li>
+<li>&ldquo;Real-time Crop Monitoring Using Computer Vision&rdquo; - International Conference on Agricultural Technology (2023)</li>
+</ol>
+<h3 id="collaborations">Collaborations</h3>
+<ul>
+<li><strong>Cornell Cooperative Extension</strong>: Field testing and validation</li>
+<li><strong>Local Farms</strong>: Real-world deployment and feedback</li>
+<li><strong>Agricultural Equipment Manufacturers</strong>: Integration with existing systems</li>
+</ul>
+<h2 id="future-directions">Future Directions</h2>
+<h3 id="planned-enhancements">Planned Enhancements</h3>
+<ul>
+<li>Integration with autonomous farming equipment</li>
+<li>Expansion to additional crop types and growing conditions</li>
+<li>Development of mobile applications for field workers</li>
+<li>Implementation of blockchain for data traceability</li>
+</ul>
+<h3 id="funding">Funding</h3>
+<p>This project is supported by:</p>
+<ul>
+<li>NSF Grant #1234567 ($500,000)</li>
+<li>USDA NIFA Award ($300,000)</li>
+<li>Cornell University Internal Funding ($150,000)</li>
+</ul>
+<h2 id="contact">Contact</h2>
+<p>For more information about this project, please contact:</p>
+<ul>
+<li>Email: <a href="mailto:crop-monitoring@cornell.edu">crop-monitoring@cornell.edu</a></li>
+<li>GitHub: <a href="https://github.com/cornell-ag-lab/crop-monitoring">github.com/cornell-ag-lab/crop-monitoring</a></li>
+</ul>
+
+        </div>
+      </div>
+
+      
+      <div class="col-lg-4">
+        <div class="project-sidebar">
+          
+          
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Team Members</h5>
+              <ul class="list-unstyled">
+                
+                <li class="mb-2">
+                  <strong>Dr. Sarah Johnson</strong>
+                  <br>
+                  <small class="text-muted">Principal Investigator</small>
+                </li>
+                
+                <li class="mb-2">
+                  <strong>Michael Chen</strong>
+                  <br>
+                  <small class="text-muted">PhD Student, Computer Vision Lead</small>
+                </li>
+                
+                <li class="mb-2">
+                  <strong>Emily Rodriguez</strong>
+                  <br>
+                  <small class="text-muted">PhD Student, Machine Learning Specialist</small>
+                </li>
+                
+                <li class="mb-2">
+                  <strong>Dr. James Park</strong>
+                  <br>
+                  <small class="text-muted">Postdoctoral Researcher, Systems Integration</small>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          
+
+          
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Project Links</h5>
+              <div class="d-grid gap-2">
+                
+                <a href="https://github.com/cornell-ag-lab/crop-monitoring" class="btn btn-outline-primary" target="_blank" rel="noopener">
+                  <i class="fab fa-github me-2"></i>GitHub Repository
+                </a>
+                
+                
+                
+              </div>
+            </div>
+          </div>
+
+          
+          
+          
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Related Publications</h5>
+              <ul class="list-unstyled">
+                
+                <li class="mb-2">
+                  <a href="/publications/deep-learning-crop-disease-2024/" class="text-decoration-none">
+                    <strong>Deep Learning Approaches for Crop Disease Detection in Precision Agriculture</strong>
+                  </a>
+                  <br>
+                  <small class="text-muted"></small>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.project-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.project-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.project-sidebar .card {
+  border: 1px solid var(--border-color);
+  background: var(--surface-dark);
+}
+
+.project-sidebar .card-title {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: var(--text-secondary);
+}
+</style>
+
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Perception Enabled Digital Agriculture Lab</h5>
+                    <p class="mb-0">Advancing precision agriculture through computer vision and cyber-physical systems.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        © 2025 Perception Enabled Digital Agriculture Lab, Cornell University
+                    </p>
+                    <p class="mb-0">
+                        <a href="mailto:lab@cornell.edu">lab@cornell.edu</a> | 
+                        <a href="https://www.cornell.edu">Cornell University</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

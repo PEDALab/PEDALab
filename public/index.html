@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta name="generator" content="Hugo 0.147.6"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perception Enabled Digital Agriculture Lab</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="http://localhost:1313/scss/custom.css">
+    
+    <style>
+        :root {
+            --primary-color: #2E7D32;
+            --secondary-color: #4CAF50;
+            --accent-color: #81C784;
+            --background-dark: #121212;
+            --background-darker: #0A0A0A;
+            --surface-dark: #1E1E1E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+            --border-color: #333333;
+        }
+        
+        body {
+            background-color: var(--background-dark) !important;
+            color: var(--text-primary) !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background-color: var(--background-darker) !important;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .navbar-brand {
+            color: var(--primary-color) !important;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .navbar-nav .nav-link {
+            color: var(--text-primary) !important;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+        
+        .hero-title {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+        }
+        
+        .btn-outline {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        
+        .card, .project-card, .stat-card {
+            background-color: var(--surface-dark) !important;
+            border: 1px solid var(--border-color) !important;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover, .project-card:hover, .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(46, 125, 50, 0.2);
+        }
+        
+        .section-title {
+            color: var(--text-primary);
+            font-weight: 700;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+        
+        .footer {
+            background-color: var(--background-darker) !important;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            margin-top: 4rem;
+            padding: 2rem 0;
+        }
+        
+        .footer a {
+            color: var(--secondary-color);
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            color: var(--accent-color);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="http://localhost:1313/">
+                <i class="fas fa-seedling me-2"></i>
+                Perception Enabled Digital Agriculture Lab
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects/">Projects</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/publications/">Publications</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news/">News</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/people/">Team</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/courses/">Learning</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main>
+        
+
+<div style="display: none;">
+    Debug: Title = Perception Enabled Digital Agriculture Lab
+    Debug: Params = map[carousel_slides:[map[button_text:View Projects description:Explore our exciting projects in precision agriculture. image:/media/navigation/agricultural-robotics.jpg link:/projects title:Projects] map[button_text:View Publications description:Discover our latest research contributions. image:/media/navigation/publications-bg.jpg link:/publications title:Publications] map[button_text:View News description:Stay updated with our latest lab announcements and research highlights image:/media/navigation/news-bg.jpg link:/news title:News] map[button_text:View Team description:Meet our talented researchers and collaborators image:/media/navigation/team-bg.jpg link:/team title:Team] map[button_text:View Courses description:Explore our educational offerings and training programs image:/media/navigation/courses-bg.jpg link:/courses title:Courses]] date:2022-10-24 00:00:00 &#43;0000 UTC draft:false featured_news:[map[path:news/new-grant-2025]] featured_projects:[map[path:projects/crop-monitoring] map[path:projects/yield-prediction] map[path:projects/agricultural-robotics]] featured_publications:[map[path:publications/deep-learning-crop-disease-2024] map[path:publications/computer-vision-yield-estimation-2024]] featured_team:[map[path:people/sarah-johnson] map[path:people/michael-chen] map[path:people/emily-rodriguez] map[path:people/david-lee]] hero:map[buttons:[map[link:/projects text:Explore Projects] map[link:/publications text:View Publications]] image:/media/lab-hero.jpg text:Advancing precision agriculture through computer vision and cyber-physical systems at Cornell University] iscjklanguage:false lastmod:2022-10-24 00:00:00 &#43;0000 UTC layout:home navigation:[map[link:/projects text:Explore Projects] map[link:/publications text:View Publications] map[link:/news text:See What&#39;s New] map[link:/people text:Meet the Team] map[link:/courses text:Learning]] publishdate:2022-10-24 00:00:00 &#43;0000 UTC title:Perception Enabled Digital Agriculture Lab type:home]
+    Debug: Content = 
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            
+            <section class="hero-section py-5 mb-5" style="background: linear-gradient(135deg, #0A0A0A 0%, #1E1E1E 100%); border-radius: 16px;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <h1 class="hero-title display-3 mb-4 animate-fade-in-up">
+                                Perception Enabled Digital Agriculture Lab
+                            </h1>
+                            <p class="lead text-secondary mb-4 animate-fade-in-up" style="animation-delay: 0.2s;">
+                                Advancing precision agriculture through computer vision and cyber-physical systems at Cornell University
+                            </p>
+                            <div class="hero-buttons animate-fade-in-up" style="animation-delay: 0.4s;">
+                                
+                                <a href="/projects" class="btn btn-primary me-3">Explore Projects</a>
+                                
+                                <a href="/publications" class="btn btn-outline me-3">View Publications</a>
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="hero-image text-center">
+                                <img src="/media/lab-hero.jpg" alt="Lab Hero" class="img-fluid rounded-3" style="max-height: 400px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="navigation-carousel-section py-4 mb-5">
+                <div class="container">
+                    <div id="navigationCarousel" class="carousel slide" data-bs-ride="carousel">
+                        
+                        <div class="carousel-inner">
+                            
+                            <div class="carousel-item active">
+                                <div class="carousel-content text-center" style="background-image: url('/media/navigation/agricultural-robotics.jpg');">
+                                    <div class="content-overlay">
+                                        <h2 class="mb-4">Projects</h2>
+                                        <p class="lead mb-4">Explore our exciting projects in precision agriculture.</p>
+                                        <a href="/projects" class="nav-button">View Projects</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item ">
+                                <div class="carousel-content text-center" style="background-image: url('/media/navigation/publications-bg.jpg');">
+                                    <div class="content-overlay">
+                                        <h2 class="mb-4">Publications</h2>
+                                        <p class="lead mb-4">Discover our latest research contributions.</p>
+                                        <a href="/publications" class="nav-button">View Publications</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item ">
+                                <div class="carousel-content text-center" style="background-image: url('/media/navigation/news-bg.jpg');">
+                                    <div class="content-overlay">
+                                        <h2 class="mb-4">News</h2>
+                                        <p class="lead mb-4">Stay updated with our latest lab announcements and research highlights</p>
+                                        <a href="/news" class="nav-button">View News</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item ">
+                                <div class="carousel-content text-center" style="background-image: url('/media/navigation/team-bg.jpg');">
+                                    <div class="content-overlay">
+                                        <h2 class="mb-4">Team</h2>
+                                        <p class="lead mb-4">Meet our talented researchers and collaborators</p>
+                                        <a href="/team" class="nav-button">View Team</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item ">
+                                <div class="carousel-content text-center" style="background-image: url('/media/navigation/courses-bg.jpg');">
+                                    <div class="content-overlay">
+                                        <h2 class="mb-4">Courses</h2>
+                                        <p class="lead mb-4">Explore our educational offerings and training programs</p>
+                                        <a href="/courses" class="nav-button">View Courses</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        
+                        <div class="carousel-indicators">
+                            
+                            <button type="button" data-bs-target="#navigationCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Projects"></button>
+                            
+                            <button type="button" data-bs-target="#navigationCarousel" data-bs-slide-to="1"  aria-label="Publications"></button>
+                            
+                            <button type="button" data-bs-target="#navigationCarousel" data-bs-slide-to="2"  aria-label="News"></button>
+                            
+                            <button type="button" data-bs-target="#navigationCarousel" data-bs-slide-to="3"  aria-label="Team"></button>
+                            
+                            <button type="button" data-bs-target="#navigationCarousel" data-bs-slide-to="4"  aria-label="Courses"></button>
+                            
+                        </div>
+
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#navigationCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#navigationCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="projects" class="projects-section py-5 mb-5">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-12 text-center">
+                            <h2 class="section-title mb-3">Featured Projects</h2>
+                            <p class="text-secondary">Cutting-edge research in precision agriculture and computer vision</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                            
+                            <div class="col-lg-4 mb-4">
+                                <div class="project-card h-100">
+                                    <div class="project-image" style="height: 200px; overflow: hidden;">
+                                        
+                                        <img src="/media/projects/crop-monitoring.jpg" alt="Perception Enabled Digital Agriculture Lab" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                        
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title text-primary">AI-Powered Crop Monitoring</h5>
+                                        <p class="card-text text-secondary">Real-time crop health assessment using computer vision and machine learning algorithms to detect diseases, pests, and nutrient deficiencies.</p>
+                                        <a href="/projects/crop-monitoring/" class="btn btn-outline btn-sm">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        
+                            
+                        
+                            
+                        
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="/projects" class="btn btn-primary">View All Projects</a>
+                    </div>
+                </div>
+            </section>
+
+            <style>
+            .project-card {
+                transition: all 0.3s ease;
+                border: 1px solid var(--border-color);
+                background: var(--surface-dark);
+            }
+
+            .project-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 30px rgba(46, 125, 50, 0.3);
+                border-color: var(--primary-color);
+            }
+
+            .project-image {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .project-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+            }
+
+            .project-card:hover .project-image img {
+                transform: scale(1.1);
+            }
+
+            .carousel-content {
+                padding: 60px 20px;
+                background: var(--surface-dark);
+                border-radius: 16px;
+                border: 1px solid var(--border-color);
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+            }
+
+            .content-overlay {
+                background: rgba(0, 0, 0, 0.7);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 60px 20px;
+                border-radius: 16px;
+            }
+
+            .carousel-content h2 {
+                color: white;
+                font-size: 2.5rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                position: relative;
+                z-index: 2;
+                line-height: 1.2;
+            }
+
+            .carousel-content .lead {
+                color: rgba(255, 255, 255, 0.9);
+                max-width: 600px;
+                margin: 0 auto 2rem;
+                height: auto;
+                min-height: 48px;
+                line-height: 1.5;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                position: relative;
+                z-index: 2;
+            }
+
+            .carousel-indicators {
+                margin-bottom: 1rem;
+            }
+
+            .carousel-indicators button {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: var(--border-color);
+                margin: 0 6px;
+            }
+
+            .carousel-indicators button.active {
+                background-color: var(--primary-color);
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                width: 5%;
+                opacity: 0.8;
+            }
+
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                background-color: var(--primary-color);
+                border-radius: 50%;
+                padding: 20px;
+            }
+
+            .nav-button {
+                position: relative;
+                z-index: 2;
+                display: inline-block;
+                min-width: 200px;
+                padding: 15px 30px;
+                background: transparent;
+                border: 2px solid var(--primary-color);
+                color: var(--primary-color);
+                font-weight: 500;
+                text-decoration: none;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+            }
+
+            .nav-button:hover {
+                background-color: var(--primary-color);
+                color: white;
+                transform: translateY(-2px);
+                box-shadow: 0 10px 20px rgba(46, 125, 50, 0.3);
+                text-decoration: none;
+            }
+
+            #navigationCarousel {
+                margin: 0 auto;
+            }
+
+            .carousel-item {
+                height: 300px;
+            }
+            </style>
+
+            
+            <section id="publications" class="publications-section py-5 mb-5">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-12 text-center">
+                            <h2 class="section-title mb-3">Recent Publications</h2>
+                            <p class="text-secondary">Latest research contributions to the field</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            
+                                
+                                <div class="card mb-4 publication-item">
+                                    <div class="row g-0">
+                                        <div class="col-md-10">
+                                            <div class="card-body p-4">
+                                                <h5 class="card-title text-primary mb-2">Deep Learning Approaches for Crop Disease Detection in Precision Agriculture</h5>
+                                                <p class="text-secondary mb-1"><em>admin, Michael Chen, Emily Rodriguez</em></p>
+                                                <p class="text-success mb-2"><strong>*IEEE Transactions on Agricultural Engineering, 45*(2)</strong>, 2024</p>
+                                                <p class="card-text text-secondary mb-3">A deep learning framework achieving 95.3% accuracy in automated crop disease detection using CNNs with attention mechanisms, validated through extensive field trials.</p>
+                                                <div class="publication-links">
+                                                    
+                                                    <a href="https://example.com/deep-learning-crop-disease-paper.pdf" class="btn btn-outline btn-sm me-2" target="_blank" rel="noopener">PDF</a>
+                                                    
+                                                    
+                                                    <a href="https://github.com/your-lab/deep-learning-crop-disease" class="btn btn-outline btn-sm me-2" target="_blank" rel="noopener">GitHub</a>
+                                                    
+                                                    
+                                                    <a href="/projects/crop-monitoring" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Project Page</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="publication-image h-100 p-4">
+                                                
+                                                <img src="/media/publications/%25!s%28%3cnil%3e%29" alt="Perception Enabled Digital Agriculture Lab" class="img-fluid h-100 w-100 rounded" style="object-fit: cover;">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                                <div class="card mb-4 publication-item">
+                                    <div class="row g-0">
+                                        <div class="col-md-10">
+                                            <div class="card-body p-4">
+                                                <h5 class="card-title text-primary mb-2">Computer Vision-Based Yield Estimation for Precision Agriculture</h5>
+                                                <p class="text-secondary mb-1"><em>David Lee, Michael Chen, Emily Rodriguez</em></p>
+                                                <p class="text-success mb-2"><strong>*Journal of Agricultural Robotics, 2*(1)</strong>, 2024</p>
+                                                <p class="card-text text-secondary mb-3">A computer vision-based deep learning model for accurate and non-invasive crop yield estimation using drone and ground-based imagery, achieving 0.92 R-squared.</p>
+                                                <div class="publication-links">
+                                                    
+                                                    <a href="https://example.com/computer-vision-yield-estimation-paper.pdf" class="btn btn-outline btn-sm me-2" target="_blank" rel="noopener">PDF</a>
+                                                    
+                                                    
+                                                    <a href="https://github.com/your-lab/computer-vision-yield-estimation" class="btn btn-outline btn-sm me-2" target="_blank" rel="noopener">GitHub</a>
+                                                    
+                                                    
+                                                    <a href="/projects/yield-prediction" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Project Page</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="publication-image h-100 p-4">
+                                                
+                                                <img src="/media/publications/Unknown.jpeg" alt="Perception Enabled Digital Agriculture Lab" class="img-fluid h-100 w-100 rounded" style="object-fit: cover;">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="/publications" class="btn btn-primary">View All Publications</a>
+                    </div>
+                </div>
+            </section>
+
+            <style>
+            .publication-item {
+                border-left: 5px solid var(--primary-color);
+                border-radius: 8px;
+                overflow: hidden;
+                transition: all 0.3s ease;
+            }
+
+            .publication-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
+            }
+
+            .publication-links a {
+                margin-right: 0.5rem;
+            }
+
+            .publication-image {
+                position: relative;
+                overflow: hidden;
+                height: 100%;
+            }
+
+            .publication-image img {
+                transition: transform 0.3s ease;
+            }
+
+            .publication-item:hover .publication-image img {
+                transform: scale(1.1);
+            }
+            </style>
+
+            
+            <section id="news" class="news-section py-5 mb-5">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-12 text-center">
+                            <h2 class="section-title mb-3">Latest News</h2>
+                            <p class="text-secondary">Stay updated with our research activities</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="card news-item">
+                                <div class="row g-0">
+                                    <div class="col-md-9">
+                                        <div class="card-body">
+                                            <div class="text-success mb-2"><small>June 10, 2025</small></div>
+                                            <h5 class="card-title text-primary">Lab Receives New Grant for AI in Agriculture</h5>
+                                            <p class="card-text text-secondary">Our lab has been awarded a significant new grant to advance research in artificial intelligence applications for sustainable agriculture.</p>
+                                            <a href="http://localhost:1313/news/new-grant-2025/" class="btn btn-outline btn-sm">Read More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="news-image h-100 p-4">
+                                            
+                                            <img src="/media/news/default.jpg" alt="Perception Enabled Digital Agriculture Lab" class="img-fluid h-100 w-100 rounded" style="object-fit: cover;">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="/news" class="btn btn-outline">View All News</a>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="people" class="people-section py-5">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-12 text-center">
+                            <h2 class="section-title mb-3">Our Team</h2>
+                            <p class="text-secondary">Meet the researchers driving innovation in digital agriculture</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                            
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="card text-center">
+                                    <div class="card-body p-4">
+                                        <div class="mb-3">
+                                            <img src="/media/team/advisor.jpg" alt="Dr. Sarah Johnson" class="rounded-circle" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid var(--primary-color);">
+                                        </div>
+                                        <h6 class="card-title text-primary">
+                                            <a href="/people/sarah-johnson/">Dr. Sarah Johnson</a>
+                                        </h6>
+                                        <p class="text-success mb-2"><strong>advisor</strong></p>
+                                        <p class="text-secondary small">Dr. Sarah Johnson</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="/people" class="btn btn-primary">View All Team Members</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+
+<style>
+.news-item {
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(76, 175, 80, 0.2);
+}
+
+.news-image {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.news-image img {
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover .news-image img {
+    transform: scale(1.1);
+}
+</style>
+
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Perception Enabled Digital Agriculture Lab</h5>
+                    <p class="mb-0">Advancing precision agriculture through computer vision and cyber-physical systems.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        © 2025 Perception Enabled Digital Agriculture Lab, Cornell University
+                    </p>
+                    <p class="mb-0">
+                        <a href="mailto:lab@cornell.edu">lab@cornell.edu</a> | 
+                        <a href="https://www.cornell.edu">Cornell University</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

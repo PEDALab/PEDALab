@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Perception Enabled Digital Agriculture Lab</title>
+    <link>http://localhost:1313/news/</link>
+    <description>Recent content in News on Perception Enabled Digital Agriculture Lab</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lab Receives New Grant for AI in Agriculture</title>
+      <link>http://localhost:1313/news/new-grant-2025/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/new-grant-2025/</guid>
+      <description>Our lab has been awarded a significant new grant to advance research in artificial intelligence applications for sustainable agriculture.</description>
+    </item>
+  </channel>
+</rss>

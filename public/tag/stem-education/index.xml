@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>STEM Education on Perception Enabled Digital Agriculture Lab</title>
+    <link>http://localhost:1313/tag/stem-education/</link>
+    <description>Recent content in STEM Education on Perception Enabled Digital Agriculture Lab</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tag/stem-education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agriculture Experiential Robotics Platform</title>
+      <link>http://localhost:1313/projects/agxrp/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/agxrp/</guid>
+      <description>A low-cost, open-source educational robotics platform that integrates precision agriculture and automation to teach students how to sustainably grow food using real-world engineering and data-driven techniques.</description>
+    </item>
+  </channel>
+</rss>

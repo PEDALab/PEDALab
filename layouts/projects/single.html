@@ -52,9 +52,9 @@
               <ul class="list-unstyled">
                 {{ range .Params.team_members }}
                 <li class="mb-2">
-                  <strong>{{ .name }}</strong>
+                  <strong class="text-primary">{{ .name }}</strong>
                   <br>
-                  <small class="text-muted">{{ .role }}</small>
+                  <small class="text-secondary">{{ .role }}</small>
                 </li>
                 {{ end }}
               </ul>
@@ -70,6 +70,11 @@
                 {{ with .Params.github }}
                 <a href="{{ . }}" class="btn btn-outline-primary" target="_blank" rel="noopener">
                   <i class="fab fa-github me-2"></i>GitHub Repository
+                </a>
+                {{ end }}
+                {{ with .Params.website }}
+                <a href="{{ . }}" class="btn btn-outline-primary" target="_blank" rel="noopener">
+                  <i class="fas fa-globe me-2"></i>Project Website
                 </a>
                 {{ end }}
                 {{ with .Params.documentation }}

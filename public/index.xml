@@ -16,6 +16,13 @@
       <description>Our lab has been awarded a significant new grant to advance research in artificial intelligence applications for sustainable agriculture.</description>
     </item>
     <item>
+      <title>Agriculture Experiential Robotics Platform</title>
+      <link>http://localhost:1313/projects/agxrp/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/agxrp/</guid>
+      <description>A low-cost, open-source educational robotics platform that integrates precision agriculture and automation to teach students how to sustainably grow food using real-world engineering and data-driven techniques.</description>
+    </item>
+    <item>
       <title>Computer Vision-Based Yield Estimation for Precision Agriculture</title>
       <link>http://localhost:1313/publications/computer-vision-yield-estimation-2024/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
@@ -28,6 +35,13 @@
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/deep-learning-crop-disease-2024/</guid>
       <description>A deep learning framework achieving 95.3% accuracy in automated crop disease detection using CNNs with attention mechanisms, validated through extensive field trials.</description>
+    </item>
+    <item>
+      <title>[Project Title]</title>
+      <link>http://localhost:1313/projects/_template/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/_template/</guid>
+      <description>[Brief project summary - 1-2 sentences]</description>
     </item>
     <item>
       <title>AI-Powered Crop Monitoring</title>

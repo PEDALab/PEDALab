@@ -6,7 +6,7 @@ type: home
 layout: home
 hero:
   text: "Advancing precision agriculture through computer vision and cyber-physical systems at Cornell University"
-  image: "/media/lab-hero.jpg"
+  image: "/media/lab-hero.png"
   buttons:
     - text: "Explore Projects"
       link: "/projects"
@@ -27,8 +27,7 @@ navigation:
 
 featured_projects:
   - path: "projects/crop-monitoring"
-  - path: "projects/yield-prediction"
-  - path: "projects/agricultural-robotics"
+  - path: "projects/agxrp"
 featured_publications:
   - path: "publications/deep-learning-crop-disease-2024"
   - path: "publications/computer-vision-yield-estimation-2024"

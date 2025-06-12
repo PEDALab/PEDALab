@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Automated Vineyard Pruning Weight Estimation | Perception Enabled Digital Agriculture Lab</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="http://localhost:1313/scss/custom.css">
+    
+    <style>
+        :root {
+            --primary-color: #2E7D32;
+            --secondary-color: #4CAF50;
+            --accent-color: #81C784;
+            --background-dark: #121212;
+            --background-darker: #0A0A0A;
+            --surface-dark: #1E1E1E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+            --border-color: #333333;
+        }
+        
+        body {
+            background-color: var(--background-dark) !important;
+            color: var(--text-primary) !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background-color: var(--background-darker) !important;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .navbar-brand {
+            color: var(--primary-color) !important;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .navbar-nav .nav-link {
+            color: var(--text-primary) !important;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+        
+        .hero-title {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+        }
+        
+        .btn-outline {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        
+        .card, .project-card, .stat-card {
+            background-color: var(--surface-dark) !important;
+            border: 1px solid var(--border-color) !important;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover, .project-card:hover, .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(46, 125, 50, 0.2);
+        }
+        
+        .section-title {
+            color: var(--text-primary);
+            font-weight: 700;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+        
+        .footer {
+            background-color: var(--background-darker) !important;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            margin-top: 4rem;
+            padding: 2rem 0;
+        }
+        
+        .footer a {
+            color: var(--secondary-color);
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            color: var(--accent-color);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="http://localhost:1313/">
+                <i class="fas fa-seedling me-2"></i>
+                Perception Enabled Digital Agriculture Lab
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects/">Projects</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/publications/">Publications</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news/">News</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/people/">Team</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/courses/">Learning</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main>
+        
+<div class="container-fluid py-5">
+  <div class="container">
+    
+    <div class="row mb-5">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/projects">Projects</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Automated Vineyard Pruning Weight Estimation</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      
+      <div class="col-lg-8">
+        <div class="project-header mb-4">
+          <h1 class="display-4 mb-3">Automated Vineyard Pruning Weight Estimation</h1>
+          <div class="project-meta mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-calendar me-2"></i>
+              <span>May 2024 - Present</span>
+            </div>
+            <div class="project-tags">
+              
+              <span class="badge bg-primary me-2">computer vision</span>
+              
+              <span class="badge bg-primary me-2">precision agriculture</span>
+              
+              <span class="badge bg-primary me-2">viticulture</span>
+              
+              <span class="badge bg-primary me-2">robotics</span>
+              
+            </div>
+          </div>
+          
+          <div class="project-image mb-4">
+            <img src="/media/projects/pruning-weight.png" alt="Automated Vineyard Pruning Weight Estimation" class="img-fluid rounded">
+          </div>
+          
+        </div>
+
+        <div class="project-content">
+          <h2 id="overview">Overview</h2>
+<p>This project presents a simple, low-cost approach to estimating pruning weight in vineyards using just a smartphone camera, structured laser light, and computer vision techniques. Traditional methods for measuring pruning weight are labor-intensive, expensive, or require specialized equipment. In contrast, this system can be built for under $500 and operated by a grower with no special training. By processing nighttime video with a smartphone and a green laser pointer, we extract structural features of grapevines to estimate pruning weight with high accuracy.</p>
+<p>The method achieves state-of-the-art results for vertical shoot positioned (VSP) vines, and also explores new approaches for high cordon (HC) vines like Concord grapes. The setup is designed to be lightweight and modular: growers can walk it down rows or mount it on an ATV, tractor, or vineyard robot.</p>
+<h2 id="objectives">Objectives</h2>
+<ul>
+<li>Provide a low-cost, accessible tool for estimating vine pruning weight</li>
+<li>Enable adoption of precision viticulture in small and medium-sized vineyards</li>
+<li>Lay groundwork for integration into autonomous vineyard robots</li>
+</ul>
+<h2 id="description">Description</h2>
+<p>We designed and validated a system that uses a smartphone, green line laser, and simple 3D printed hardware to scan grapevines at night. A computer vision pipeline isolates the structured light pattern to reconstruct vine silhouettes and estimate pruning weight. For VSP vines, this results in an R² of 0.80, outperforming many existing systems. For Concord vines with more complex structure, the method is less accurate (R² = 0.29) but establishes a foundation for 3D-based pruning weight estimation.</p>
+<h2 id="impact">Impact</h2>
+<p>This project enables more growers to benefit from data-driven decisions in vineyard management. With minimal equipment and cost, they can now estimate pruning weights—a key factor in balancing crop yield and vine health. The platform reduces labor demands, makes data collection feasible even in harsh winter conditions, and broadens access to precision agriculture tools.</p>
+<h2 id="future-work">Future Work</h2>
+<ul>
+<li>Improve performance on Concord and other high cordon vine types</li>
+<li>Integrate real-time processing for in-field feedback</li>
+<li>Mount system to autonomous vineyard robots for large-scale deployment</li>
+<li>Add other sensor modalities (e.g., soil, canopy, spectral)</li>
+</ul>
+
+        </div>
+      </div>
+
+      
+      <div class="col-lg-4">
+        <div class="project-sidebar">
+          
+          
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Team Members</h5>
+              <ul class="list-unstyled">
+                
+                <li class="mb-2">
+                  <strong class="text-primary">Jonathan Jaramillo</strong>
+                  <br>
+                  <small class="text-secondary">Lead Developer and Researcher</small>
+                </li>
+                
+                <li class="mb-2">
+                  <strong class="text-primary">Aaron Wilhelm</strong>
+                  <br>
+                  <small class="text-secondary">Developer and Researcher</small>
+                </li>
+                
+                <li class="mb-2">
+                  <strong class="text-primary">Nils Napp</strong>
+                  <br>
+                  <small class="text-secondary">Robotics and CV Advisor</small>
+                </li>
+                
+                <li class="mb-2">
+                  <strong class="text-primary">Justine Vanden Heuvel</strong>
+                  <br>
+                  <small class="text-secondary">Viticulture Expert</small>
+                </li>
+                
+                <li class="mb-2">
+                  <strong class="text-primary">Kirstin Petersen</strong>
+                  <br>
+                  <small class="text-secondary">Principle Investigator</small>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          
+
+          
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Project Links</h5>
+              <div class="d-grid gap-2">
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.project-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.project-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.project-sidebar .card {
+  border: 1px solid var(--border-color);
+  background: var(--surface-dark);
+}
+
+.project-sidebar .card-title {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: var(--text-secondary);
+}
+</style>
+
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Perception Enabled Digital Agriculture Lab</h5>
+                    <p class="mb-0">Advancing precision agriculture through computer vision and cyber-physical systems.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        © 2025 Perception Enabled Digital Agriculture Lab, Cornell University
+                    </p>
+                    <p class="mb-0">
+                        <a href="mailto:lab@cornell.edu">lab@cornell.edu</a> | 
+                        <a href="https://www.cornell.edu">Cornell University</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

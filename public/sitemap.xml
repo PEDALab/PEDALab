@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tag/computer-vision/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tag/irrigation/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tag/precision-agriculture/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tag/smartphone-sensing/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/crop-coefficient/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tag/vineyard/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/news/new-grant-2025/</loc>
     <lastmod>2025-06-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -23,22 +47,34 @@
     <loc>http://localhost:1313/category/outreach-projects/</loc>
     <lastmod>2024-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2024-08-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tag/stem-education/</loc>
     <lastmod>2024-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-08-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/projects/pruning-weight/</loc>
+    <lastmod>2024-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tag/robotics/</loc>
+    <lastmod>2024-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tag/viticulture/</loc>
+    <lastmod>2024-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tag/dataset/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tag/deep-learning/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tag/segmentation/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/grapesam/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/publication-type/2/</loc>
     <lastmod>2024-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/authors/</loc>
-    <lastmod>2024-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tag/computer-vision/</loc>
     <lastmod>2024-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/publications/computer-vision-yield-estimation-2024/</loc>
@@ -47,25 +83,16 @@
     <loc>http://localhost:1313/author/david-lee/</loc>
     <lastmod>2024-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tag/deep-learning/</loc>
-    <lastmod>2024-03-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/author/emily-rodriguez/</loc>
     <lastmod>2024-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/author/michael-chen/</loc>
     <lastmod>2024-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tag/precision-agriculture/</loc>
-    <lastmod>2024-03-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/publication_types/</loc>
     <lastmod>2024-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/publications/</loc>
-    <lastmod>2024-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tag/robotics/</loc>
     <lastmod>2024-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tag/yield-estimation/</loc>
@@ -82,6 +109,9 @@
   </url><url>
     <loc>http://localhost:1313/author/perception-enabled-digital-agriculture-lab/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/news/_template/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/_template/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
@@ -112,6 +142,12 @@
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/martha/</loc>
+    <lastmod>2021-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/yield_estimation/</loc>
+    <lastmod>2021-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/courses/</loc>
   </url><url>

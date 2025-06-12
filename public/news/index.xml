@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/news/new-grant-2025/</guid>
       <description>Our lab has been awarded a significant new grant to advance research in artificial intelligence applications for sustainable agriculture.</description>
     </item>
+    <item>
+      <title>[News Title]</title>
+      <link>http://localhost:1313/news/_template/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/_template/</guid>
+      <description>Our lab has been awarded a significant new grant to advance research in artificial intelligence applications for sustainable agriculture.</description>
+    </item>
   </channel>
 </rss>

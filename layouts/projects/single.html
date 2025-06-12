@@ -31,7 +31,7 @@
           </div>
           {{ if .Params.image }}
           <div class="project-image mb-4">
-            <img src="{{ .Params.image.filename | relURL }}" alt="{{ .Title }}" class="img-fluid rounded">
+            <img src="{{ printf "/media/projects/%s" .Params.image.filename }}" alt="{{ .Title }}" class="img-fluid rounded">
           </div>
           {{ end }}
         </div>

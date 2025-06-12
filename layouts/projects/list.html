@@ -25,7 +25,7 @@
     <!-- Projects Grid -->
     <div class="row" id="projects-grid">
       {{ range .Pages }}
-      <div class="col-lg-4 col-md-6 mb-4 project-item" data-categories="{{ delimit .Params.tags " " | lower }}">
+      <div class="col-lg-4 col-md-6 mb-4 project-item" data-categories="{{ with .Params.tags }}{{ delimit . " " | lower }}{{ end }}">
         <div class="project-card h-100">
           <div class="project-image" style="height: 200px; overflow: hidden;">
             {{ with .Params.image }}
@@ -36,7 +36,7 @@
           </div>
           <div class="card-body p-4">
             <h5 class="card-title text-primary">{{ .Title }}</h5>
-            <p class="card-text text-secondary">{{ .Summary }}</p>
+            <p class="card-text text-summary">{{ .Summary }}</p>
             <a href="{{ .RelPermalink }}" class="btn btn-outline btn-sm">Learn More</a>
           </div>
         </div>
@@ -104,9 +104,13 @@
 
 /* Ensure text colors are preserved when card is a link */
 .project-card .text-primary,
-.project-card .text-secondary,
+.project-card .text-summary,
 .project-card .text-muted {
   color: inherit !important;
+}
+
+.card-text.text-summary {
+  color: var(--text-summary) !important;
 }
 </style>
 

@@ -4,10 +4,11 @@ date: "2024-08-01"
 draft: false
 featured: true
 image:
-  filename: "crop-monitoring.jpg"
+  filename: "agxrp.png"
   focal_point: "Smart"
   preview_only: false
 tags:
+  - Robotics
   - STEM Education
   - Automation
   - IoT

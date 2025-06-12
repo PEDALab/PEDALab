@@ -6,14 +6,28 @@
     <description>Recent content in Robotics on Perception Enabled Digital Agriculture Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tag/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automated Vineyard Pruning Weight Estimation</title>
+      <link>http://localhost:1313/projects/pruning-weight/</link>
+      <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/pruning-weight/</guid>
+      <description>We developed an inexpensive, easy-to-use smartphone-based system that estimates grapevine pruning weight using structured light and computer vision.</description>
+    </item>
     <item>
       <title>Computer Vision-Based Yield Estimation for Precision Agriculture</title>
       <link>http://localhost:1313/publications/computer-vision-yield-estimation-2024/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/computer-vision-yield-estimation-2024/</guid>
       <description>A computer vision-based deep learning model for accurate and non-invasive crop yield estimation using drone and ground-based imagery, achieving 0.92 R-squared.</description>
+    </item>
+    <item>
+      <title>Martha: Mobile and Inflatable Interface for Human-Robot Interaction</title>
+      <link>http://localhost:1313/projects/martha/</link>
+      <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/martha/</guid>
+      <description>An open-source, low-cost, soft-bodied mobile robot designed for safe, multimodal interaction in crowded and unstructured environments.</description>
     </item>
   </channel>
 </rss>

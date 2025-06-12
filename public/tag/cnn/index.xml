@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CNN on Perception Enabled Digital Agriculture Lab</title>
+    <link>http://localhost:1313/tag/cnn/</link>
+    <description>Recent content in CNN on Perception Enabled Digital Agriculture Lab</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tag/cnn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Learning Approaches for Crop Disease Detection in Precision Agriculture</title>
+      <link>http://localhost:1313/publications/deep-learning-crop-disease-2024/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/deep-learning-crop-disease-2024/</guid>
+      <description>A deep learning framework achieving 95.3% accuracy in automated crop disease detection using CNNs with attention mechanisms, validated through extensive field trials.</description>
+    </item>
+  </channel>
+</rss>

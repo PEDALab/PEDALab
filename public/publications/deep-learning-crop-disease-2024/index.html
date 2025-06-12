@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deep Learning Approaches for Crop Disease Detection in Precision Agriculture | Perception Enabled Digital Agriculture Lab</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="http://localhost:1313/scss/custom.css">
+    
+    <style>
+        :root {
+            --primary-color: #2E7D32;
+            --secondary-color: #4CAF50;
+            --accent-color: #81C784;
+            --background-dark: #121212;
+            --background-darker: #0A0A0A;
+            --surface-dark: #1E1E1E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+            --border-color: #333333;
+        }
+        
+        body {
+            background-color: var(--background-dark) !important;
+            color: var(--text-primary) !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background-color: var(--background-darker) !important;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .navbar-brand {
+            color: var(--primary-color) !important;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .navbar-nav .nav-link {
+            color: var(--text-primary) !important;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+        
+        .hero-title {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+        }
+        
+        .btn-outline {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        
+        .card, .project-card, .stat-card {
+            background-color: var(--surface-dark) !important;
+            border: 1px solid var(--border-color) !important;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover, .project-card:hover, .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(46, 125, 50, 0.2);
+        }
+        
+        .section-title {
+            color: var(--text-primary);
+            font-weight: 700;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+        
+        .footer {
+            background-color: var(--background-darker) !important;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            margin-top: 4rem;
+            padding: 2rem 0;
+        }
+        
+        .footer a {
+            color: var(--secondary-color);
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            color: var(--accent-color);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="http://localhost:1313/">
+                <i class="fas fa-seedling me-2"></i>
+                Perception Enabled Digital Agriculture Lab
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects/">Projects</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/publications/">Publications</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news/">News</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/people/">Team</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/courses/">Learning</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main>
+        
+<div class="container-fluid py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <article>
+          <header class="text-center mb-5">
+            <h1 class="display-4 mb-3">Deep Learning Approaches for Crop Disease Detection in Precision Agriculture</h1>
+            <div class="text-muted mb-3">
+              <i class="fas fa-users me-2"></i>admin, Michael Chen, Emily Rodriguez
+              <span class="mx-2">|</span>
+              <i class="far fa-calendar-alt me-2"></i><time datetime="2024-01-15">January 15, 2024</time>
+            </div>
+          </header>
+          <div class="article-content text-secondary">
+            <h2 id="introduction">Introduction</h2>
+<p>Crop diseases pose a significant threat to global food security, causing annual losses of billions of dollars worldwide. Traditional disease detection methods rely heavily on manual inspection by agricultural experts, which is time-consuming, subjective, and often occurs too late for effective intervention. The advent of precision agriculture and advances in computer vision present unprecedented opportunities for automated, early-stage disease detection.</p>
+<h2 id="methodology">Methodology</h2>
+<h3 id="deep-learning-architecture">Deep Learning Architecture</h3>
+<p>Our proposed framework builds upon the success of convolutional neural networks (CNNs) while addressing specific challenges in agricultural imagery analysis. The architecture consists of:</p>
+<ol>
+<li><strong>Multi-scale Feature Extraction Module</strong>: Captures disease symptoms at different spatial resolutions</li>
+<li><strong>Attention Mechanism</strong>: Focuses on relevant image regions while suppressing background noise</li>
+<li><strong>Disease Classification Head</strong>: Outputs probability distributions over disease categories</li>
+<li><strong>Confidence Estimation Module</strong>: Provides uncertainty quantification for predictions</li>
+</ol>
+<h3 id="dataset-and-training">Dataset and Training</h3>
+<p>We compiled a comprehensive dataset of over 100,000 annotated images covering:</p>
+<ul>
+<li>15 major crop types (corn, wheat, soybean, tomato, etc.)</li>
+<li>50+ disease categories</li>
+<li>Various growth stages and environmental conditions</li>
+<li>Multiple imaging modalities (RGB, multispectral, thermal)</li>
+</ul>
+<p>The training process employed:</p>
+<ul>
+<li>Data augmentation techniques specific to agricultural imagery</li>
+<li>Transfer learning from ImageNet pre-trained models</li>
+<li>Progressive training strategy with curriculum learning</li>
+<li>Cross-validation across different geographical regions</li>
+</ul>
+<h2 id="results">Results</h2>
+<h3 id="performance-metrics">Performance Metrics</h3>
+<p>Our model achieved exceptional performance across all evaluation metrics:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Metric</th>
+          <th>Score</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Overall Accuracy</td>
+          <td>95.3%</td>
+      </tr>
+      <tr>
+          <td>Precision</td>
+          <td>94.8%</td>
+      </tr>
+      <tr>
+          <td>Recall</td>
+          <td>95.1%</td>
+      </tr>
+      <tr>
+          <td>F1-Score</td>
+          <td>94.9%</td>
+      </tr>
+      <tr>
+          <td>AUC-ROC</td>
+          <td>0.987</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="comparative-analysis">Comparative Analysis</h3>
+<p>Comparison with existing methods:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Accuracy</th>
+          <th>Processing Time</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Traditional CV</td>
+          <td>78.2%</td>
+          <td>2.3s</td>
+      </tr>
+      <tr>
+          <td>ResNet-50</td>
+          <td>89.1%</td>
+          <td>0.8s</td>
+      </tr>
+      <tr>
+          <td>EfficientNet</td>
+          <td>91.4%</td>
+          <td>0.6s</td>
+      </tr>
+      <tr>
+          <td><strong>Our Method</strong></td>
+          <td><strong>95.3%</strong></td>
+          <td><strong>0.4s</strong></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="field-validation">Field Validation</h3>
+<p>Extensive field trials were conducted across:</p>
+<ul>
+<li>25 farms in New York State</li>
+<li>3 growing seasons (2021-2023)</li>
+<li>Various weather conditions</li>
+<li>Different crop varieties</li>
+</ul>
+<p>Results showed consistent performance with minimal degradation compared to laboratory conditions.</p>
+<h2 id="discussion">Discussion</h2>
+<h3 id="key-contributions">Key Contributions</h3>
+<ol>
+<li><strong>Novel Architecture</strong>: Our multi-scale attention-based CNN architecture specifically designed for agricultural imagery</li>
+<li><strong>Comprehensive Dataset</strong>: The largest annotated crop disease dataset to date</li>
+<li><strong>Real-world Validation</strong>: Extensive field testing demonstrating practical applicability</li>
+<li><strong>Edge Deployment</strong>: Optimized models for real-time inference on agricultural edge devices</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>This work presents a significant advancement in automated crop disease detection, achieving state-of-the-art performance while maintaining practical applicability for real-world agricultural settings. The proposed deep learning framework demonstrates the potential of AI technologies to transform precision agriculture and contribute to global food security.</p>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>We thank the Cornell Cooperative Extension, participating farmers, and the agricultural community for their support and collaboration. This research was supported by NSF Grant #1234567 and USDA NIFA Award #2023-67021-40000.</p>
+<h2 id="references">References</h2>
+<p>[1] Smith, J., et al. &ldquo;Computer vision in agriculture: A comprehensive review.&rdquo; <em>Agricultural Systems</em>, vol. 195, 2022.</p>
+<p>[2] Johnson, A., et al. &ldquo;Deep learning for plant disease detection: A systematic review.&rdquo; <em>Computers and Electronics in Agriculture</em>, vol. 180, 2021.</p>
+<p>[3] Brown, M., et al. &ldquo;Precision agriculture technologies: Current status and future prospects.&rdquo; <em>Journal of Agricultural Engineering</em>, vol. 52, no. 3, 2021.</p>
+
+          </div>
+          <div class="publication-links text-center mt-5">
+            
+            <a href="https://example.com/deep-learning-crop-disease-paper.pdf" class="btn btn-primary me-3" target="_blank" rel="noopener">View PDF</a>
+            
+            
+            <a href="https://github.com/your-lab/deep-learning-crop-disease" class="btn btn-outline me-3" target="_blank" rel="noopener">GitHub Code</a>
+            
+            
+            <a href="/projects/crop-monitoring" class="btn btn-outline" target="_blank" rel="noopener">Project Page</a>
+            
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.article-content h2, .article-content h3, .article-content h4, .article-content h5, .article-content h6 {
+  color: var(--text-primary);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.article-content p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.article-content ul, .article-content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+}
+
+.article-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.article-content a:hover {
+  text-decoration: underline;
+}
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article-content blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1rem;
+  margin-left: 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.article-content pre {
+  background-color: var(--surface-dark);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.article-content code {
+  font-family: "Fira Code", "Cascadia Code", monospace;
+  color: var(--accent-color);
+}
+</style>
+
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Perception Enabled Digital Agriculture Lab</h5>
+                    <p class="mb-0">Advancing precision agriculture through computer vision and cyber-physical systems.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        © 2025 Perception Enabled Digital Agriculture Lab, Cornell University
+                    </p>
+                    <p class="mb-0">
+                        <a href="mailto:lab@cornell.edu">lab@cornell.edu</a> | 
+                        <a href="https://www.cornell.edu">Cornell University</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

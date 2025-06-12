@@ -24,9 +24,12 @@
             <h5 class="card-title text-primary mb-1"><a href="{{ .Permalink }}" class="text-decoration-none text-primary">{{ .Title }}</a></h5>
             <p class="text-success mb-2"><strong>{{ .Params.position | default "Advisor" }}</strong></p>
             <p class="text-secondary small">{{ .Params.bio | default "" }}</p>
-            {{ if .Params.email }}
-            <a href="mailto:{{ .Params.email }}" class="btn btn-outline btn-sm mt-2">Contact</a>
-            {{ end }}
+            <div class="d-flex justify-content-center gap-2">
+              {{ if .Params.email }}
+              <a href="mailto:{{ .Params.email }}" class="btn btn-outline btn-sm mt-2">Contact</a>
+              {{ end }}
+              <a href="{{ .Permalink }}" class="btn btn-outline btn-sm mt-2">Bio</a>
+            </div>
           </div>
         </div>
       </div>

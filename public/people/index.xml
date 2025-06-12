@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>People on Perception Enabled Digital Agriculture Lab</title>
+    <link>http://localhost:1313/people/</link>
+    <description>Recent content in People on Perception Enabled Digital Agriculture Lab</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/people/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dr. Sarah Johnson</title>
+      <link>http://localhost:1313/people/sarah-johnson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/people/sarah-johnson/</guid>
+      <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;&#xA;&lt;p&gt;Dr. Sarah Johnson is a Professor of Computer Science and Agricultural Engineering at Cornell University. Her research focuses on developing innovative computer vision and cyber-physical systems for precision agriculture, with the goal of making farming more efficient and sustainable.&lt;/p&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ph.D. in Computer Science, Stanford University, 2010&lt;/li&gt;&#xA;&lt;li&gt;M.S. in Agricultural Engineering, UC Davis, 2006&lt;/li&gt;&#xA;&lt;li&gt;B.S. in Computer Engineering, MIT, 2004&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;research-interests&#34;&gt;Research Interests&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Computer Vision for Plant Phenotyping&lt;/li&gt;&#xA;&lt;li&gt;Autonomous Agricultural Robotics&lt;/li&gt;&#xA;&lt;li&gt;Machine Learning in Precision Agriculture&lt;/li&gt;&#xA;&lt;li&gt;Cyber-Physical Systems for Smart Farming&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;current-projects&#34;&gt;Current Projects&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Smart Crop Monitoring&lt;/strong&gt;: Developing AI-powered systems for real-time crop health monitoring&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Autonomous Harvesting&lt;/strong&gt;: Creating robotic systems for selective harvesting&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Digital Twin Agriculture&lt;/strong&gt;: Building virtual models of agricultural systems for optimization&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;selected-publications&#34;&gt;Selected Publications&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Johnson, S., et al. (2023). &amp;ldquo;Deep Learning for Plant Disease Detection.&amp;rdquo; &lt;em&gt;Nature Machine Intelligence&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Johnson, S., &amp;amp; Chen, M. (2022). &amp;ldquo;Robotic Systems in Modern Agriculture.&amp;rdquo; &lt;em&gt;IEEE Robotics and Automation Letters&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Johnson, S., et al. (2021). &amp;ldquo;Computer Vision Applications in Precision Agriculture.&amp;rdquo; &lt;em&gt;Agricultural Systems&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;teaching&#34;&gt;Teaching&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CS 4320: Computer Vision&lt;/li&gt;&#xA;&lt;li&gt;AGEN 5100: Precision Agriculture Systems&lt;/li&gt;&#xA;&lt;li&gt;CS 6750: Machine Learning for Agriculture&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;&#xA;&lt;p&gt;Feel free to reach out if you&amp;rsquo;re interested in joining our lab or collaborating on research projects. I&amp;rsquo;m particularly interested in working with students who are passionate about applying technology to solve agricultural challenges.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dr. Sarah Johnson</title>
+      <link>http://localhost:1313/people/some-other-person/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/people/some-other-person/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

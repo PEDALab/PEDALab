@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Perception Enabled Digital Agriculture Lab</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Perception Enabled Digital Agriculture Lab</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lab Receives New Grant for AI in Agriculture</title>
+      <link>http://localhost:1313/news/new-grant-2025/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/new-grant-2025/</guid>
+      <description>Our lab has been awarded a significant new grant to advance research in artificial intelligence applications for sustainable agriculture.</description>
+    </item>
+    <item>
+      <title>Computer Vision-Based Yield Estimation for Precision Agriculture</title>
+      <link>http://localhost:1313/publications/computer-vision-yield-estimation-2024/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/computer-vision-yield-estimation-2024/</guid>
+      <description>A computer vision-based deep learning model for accurate and non-invasive crop yield estimation using drone and ground-based imagery, achieving 0.92 R-squared.</description>
+    </item>
+    <item>
+      <title>Deep Learning Approaches for Crop Disease Detection in Precision Agriculture</title>
+      <link>http://localhost:1313/publications/deep-learning-crop-disease-2024/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/deep-learning-crop-disease-2024/</guid>
+      <description>A deep learning framework achieving 95.3% accuracy in automated crop disease detection using CNNs with attention mechanisms, validated through extensive field trials.</description>
+    </item>
+    <item>
+      <title>AI-Powered Crop Monitoring</title>
+      <link>http://localhost:1313/projects/crop-monitoring/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/crop-monitoring/</guid>
+      <description>Real-time crop health assessment using computer vision and machine learning algorithms to detect diseases, pests, and nutrient deficiencies.</description>
+    </item>
+    <item>
+      <title>CS 5787: Computer Vision for Agriculture</title>
+      <link>http://localhost:1313/courses/cs5787/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/courses/cs5787/</guid>
+      <description>Advanced topics in computer vision techniques applied to agricultural challenges, including crop phenotyping, disease detection, and yield estimation.</description>
+    </item>
+    <item>
+      <title>Dr. Sarah Johnson</title>
+      <link>http://localhost:1313/people/sarah-johnson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/people/sarah-johnson/</guid>
+      <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;&#xA;&lt;p&gt;Dr. Sarah Johnson is a Professor of Computer Science and Agricultural Engineering at Cornell University. Her research focuses on developing innovative computer vision and cyber-physical systems for precision agriculture, with the goal of making farming more efficient and sustainable.&lt;/p&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ph.D. in Computer Science, Stanford University, 2010&lt;/li&gt;&#xA;&lt;li&gt;M.S. in Agricultural Engineering, UC Davis, 2006&lt;/li&gt;&#xA;&lt;li&gt;B.S. in Computer Engineering, MIT, 2004&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;research-interests&#34;&gt;Research Interests&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Computer Vision for Plant Phenotyping&lt;/li&gt;&#xA;&lt;li&gt;Autonomous Agricultural Robotics&lt;/li&gt;&#xA;&lt;li&gt;Machine Learning in Precision Agriculture&lt;/li&gt;&#xA;&lt;li&gt;Cyber-Physical Systems for Smart Farming&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;current-projects&#34;&gt;Current Projects&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Smart Crop Monitoring&lt;/strong&gt;: Developing AI-powered systems for real-time crop health monitoring&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Autonomous Harvesting&lt;/strong&gt;: Creating robotic systems for selective harvesting&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Digital Twin Agriculture&lt;/strong&gt;: Building virtual models of agricultural systems for optimization&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;selected-publications&#34;&gt;Selected Publications&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Johnson, S., et al. (2023). &amp;ldquo;Deep Learning for Plant Disease Detection.&amp;rdquo; &lt;em&gt;Nature Machine Intelligence&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Johnson, S., &amp;amp; Chen, M. (2022). &amp;ldquo;Robotic Systems in Modern Agriculture.&amp;rdquo; &lt;em&gt;IEEE Robotics and Automation Letters&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Johnson, S., et al. (2021). &amp;ldquo;Computer Vision Applications in Precision Agriculture.&amp;rdquo; &lt;em&gt;Agricultural Systems&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;teaching&#34;&gt;Teaching&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CS 4320: Computer Vision&lt;/li&gt;&#xA;&lt;li&gt;AGEN 5100: Precision Agriculture Systems&lt;/li&gt;&#xA;&lt;li&gt;CS 6750: Machine Learning for Agriculture&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;&#xA;&lt;p&gt;Feel free to reach out if you&amp;rsquo;re interested in joining our lab or collaborating on research projects. I&amp;rsquo;m particularly interested in working with students who are passionate about applying technology to solve agricultural challenges.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dr. Sarah Johnson</title>
+      <link>http://localhost:1313/people/some-other-person/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/people/some-other-person/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

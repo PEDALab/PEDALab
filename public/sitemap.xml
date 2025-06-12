@@ -47,13 +47,13 @@
     <loc>http://localhost:1313/category/outreach-projects/</loc>
     <lastmod>2024-08-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tag/robotics/</loc>
+    <lastmod>2024-08-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tag/stem-education/</loc>
     <lastmod>2024-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/pruning-weight/</loc>
-    <lastmod>2024-05-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tag/robotics/</loc>
     <lastmod>2024-05-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tag/viticulture/</loc>
@@ -113,9 +113,6 @@
     <loc>http://localhost:1313/news/_template/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/_template/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tag/tag1/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -124,21 +121,6 @@
   </url><url>
     <loc>http://localhost:1313/tag/tag3/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/crop-monitoring/</loc>
-    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tag/crop-health/</loc>
-    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tag/disease-detection/</loc>
-    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tag/machine-learning/</loc>
-    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/category/research-projects/</loc>
-    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>

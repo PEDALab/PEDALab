@@ -58,17 +58,17 @@
       <description></description>
     </item>
     <item>
+      <title>Robotics</title>
+      <link>http://localhost:1313/tag/robotics/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tag/robotics/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>STEM Education</title>
       <link>http://localhost:1313/tag/stem-education/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tag/stem-education/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Robotics</title>
-      <link>http://localhost:1313/tag/robotics/</link>
-      <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tag/robotics/</guid>
       <description></description>
     </item>
     <item>
@@ -139,27 +139,6 @@
       <link>http://localhost:1313/tag/tag3/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tag/tag3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Crop Health</title>
-      <link>http://localhost:1313/tag/crop-health/</link>
-      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tag/crop-health/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Disease Detection</title>
-      <link>http://localhost:1313/tag/disease-detection/</link>
-      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tag/disease-detection/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Machine Learning</title>
-      <link>http://localhost:1313/tag/machine-learning/</link>
-      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tag/machine-learning/</guid>
       <description></description>
     </item>
   </channel>

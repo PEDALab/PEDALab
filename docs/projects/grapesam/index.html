@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ViViD-5K: A Dataset and Model for Grape Cluster and Berry Segmentation | Perception Enabled Digital Agriculture Lab</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="https://www.pedaglab.com/scss/custom.css">
+    
+    <style>
+        :root {
+            --primary-color: #2E7D32;
+            --secondary-color: #4CAF50;
+            --accent-color: #81C784;
+            --background-dark: #121212;
+            --background-darker: #0A0A0A;
+            --surface-dark: #1E1E1E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+            --border-color: #333333;
+        }
+        
+        body {
+            background-color: var(--background-dark) !important;
+            color: var(--text-primary) !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background-color: var(--background-darker) !important;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .navbar-brand {
+            color: var(--primary-color) !important;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .navbar-nav .nav-link {
+            color: var(--text-primary) !important;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+        
+        .hero-title {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+        }
+        
+        .btn-outline {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        
+        .card, .project-card, .stat-card {
+            background-color: var(--surface-dark) !important;
+            border: 1px solid var(--border-color) !important;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover, .project-card:hover, .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(46, 125, 50, 0.2);
+        }
+        
+        .section-title {
+            color: var(--text-primary);
+            font-weight: 700;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+        
+        .footer {
+            background-color: var(--background-darker) !important;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            margin-top: 4rem;
+            padding: 2rem 0;
+        }
+        
+        .footer a {
+            color: var(--secondary-color);
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            color: var(--accent-color);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.pedaglab.com/">
+                <i class="fas fa-seedling me-2"></i>
+                Perception Enabled Digital Agriculture Lab
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects/">Projects</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/publications/">Publications</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news/">News</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/people/">Team</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/courses/">Learning</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main>
+        
+<div class="container-fluid py-5">
+  <div class="container">
+    
+    <div class="row mb-5">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/projects">Projects</a></li>
+            <li class="breadcrumb-item active" aria-current="page">ViViD-5K: A Dataset and Model for Grape Cluster and Berry Segmentation</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      
+      <div class="col-lg-8">
+        <div class="project-header mb-4">
+          <h1 class="display-4 mb-3">ViViD-5K: A Dataset and Model for Grape Cluster and Berry Segmentation</h1>
+          <div class="project-meta mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-calendar me-2"></i>
+              <span>March 2024 - Present</span>
+            </div>
+            <div class="project-tags">
+              
+              <span class="badge bg-primary me-2">viticulture</span>
+              
+              <span class="badge bg-primary me-2">computer vision</span>
+              
+              <span class="badge bg-primary me-2">deep learning</span>
+              
+              <span class="badge bg-primary me-2">dataset</span>
+              
+              <span class="badge bg-primary me-2">segmentation</span>
+              
+            </div>
+          </div>
+          
+          <div class="project-image mb-4">
+            <img src="/media/projects/grapesam.png" alt="ViViD-5K: A Dataset and Model for Grape Cluster and Berry Segmentation" class="img-fluid rounded">
+          </div>
+          
+        </div>
+
+        <div class="project-content">
+          <h2 id="overview">Overview</h2>
+<p>Grape growers need accurate ways to monitor cluster closure — the process where gaps between berries disappear as grapes ripen. Traditional methods are manual and imprecise. The ViViD-5K project addresses this by providing a large-scale, annotated dataset of vineyard images and a baseline AI pipeline for segmenting grape clusters and berries.</p>
+<p>The dataset includes 5,000 field-collected images representing 13 grape varieties, with over 648,000 annotated berry keypoints and more than 18,000 cluster masks. A baseline method called GrapeSAM combines keypoint detection, transformer-based segmentation, and promptable foundation models to deliver high-quality segmentation under real-world vineyard conditions. This enables automated, scalable analysis of grape phenology and health.</p>
+<h2 id="objectives">Objectives</h2>
+<ul>
+<li>Build a comprehensive image dataset for grape cluster and berry segmentation</li>
+<li>Develop a two-stage AI pipeline for segmenting clusters and berries under field conditions</li>
+<li>Provide tools for estimating grape cluster closure automatically over time</li>
+</ul>
+<h2 id="description">Description</h2>
+<p>The ViViD-5K project assembled the largest publicly available dataset of annotated vineyard images to date, sourced from previous studies and new fieldwork in New York vineyards. Images were labeled using the CVAT tool by a team of annotators, ensuring high-quality segmentation masks and berry keypoints.</p>
+<p>The accompanying model pipeline uses:</p>
+<ul>
+<li><strong>VGG-based keypoint detection</strong> for localizing berry centers</li>
+<li><strong>Segment Anything Model (SAM)</strong> for mask generation from point prompts</li>
+<li><strong>Mask2Former</strong> for cluster-level instance segmentation</li>
+</ul>
+<p>The GrapeSAM pipeline computes the visual cluster closure (VCC) metric from these masks, offering an automated replacement for manual scoring methods. A post-processing step filters out mask outliers using statistical analysis to improve segmentation quality.</p>
+<h2 id="impact">Impact</h2>
+<p>This project provides a powerful toolkit for viticulture researchers and practitioners. It reduces labor and increases objectivity in monitoring grape development, especially in estimating cluster closure — a trait linked to disease susceptibility and crop quality. ViViD-5K also serves as a valuable benchmark for computer vision researchers tackling dense instance segmentation or long-tail distributions.</p>
+<h2 id="future-work">Future Work</h2>
+<ul>
+<li>Expand dataset to better cover early-stage grape development</li>
+<li>Improve berry segmentation accuracy for small and occluded instances</li>
+<li>Extend GrapeSAM with lightweight models for mobile or edge deployment</li>
+<li>Explore semi-supervised training to reduce annotation costs</li>
+</ul>
+
+        </div>
+      </div>
+
+      
+      <div class="col-lg-4">
+        <div class="project-sidebar">
+          
+          
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Team Members</h5>
+              <ul class="list-unstyled">
+                
+                <li class="mb-2">
+                  <strong class="text-primary">Xiangzhi Tong</strong>
+                  <br>
+                  <small class="text-secondary">Lead Developer and Dataset Coordinator</small>
+                </li>
+                
+                <li class="mb-2">
+                  <strong class="text-primary">Chengrui Zhang</strong>
+                  <br>
+                  <small class="text-secondary">Software Developer</small>
+                </li>
+                
+                <li class="mb-2">
+                  <strong class="text-primary">Jonathan Jaramillo</strong>
+                  <br>
+                  <small class="text-secondary">Project Advisor</small>
+                </li>
+                
+                <li class="mb-2">
+                  <strong class="text-primary">Justine E. Vanden Heuvel</strong>
+                  <br>
+                  <small class="text-secondary">Viticulture Expert and Advisor</small>
+                </li>
+                
+                <li class="mb-2">
+                  <strong class="text-primary">Yu Jiang</strong>
+                  <br>
+                  <small class="text-secondary">Principal Investigator</small>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          
+
+          
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Project Links</h5>
+              <div class="d-grid gap-2">
+                
+                <a href="https://github.com/tong-xz/GrapeSAM" class="btn btn-outline-primary" target="_blank" rel="noopener">
+                  <i class="fab fa-github me-2"></i>GitHub Repository
+                </a>
+                
+                
+                
+                <a href="https://huggingface.co/datasets/XZhi/ViViD-5k" class="btn btn-outline-primary" target="_blank" rel="noopener">
+                  <i class="fas fa-book me-2"></i>Documentation
+                </a>
+                
+                
+              </div>
+            </div>
+          </div>
+
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.project-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.project-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.project-sidebar .card {
+  border: 1px solid var(--border-color);
+  background: var(--surface-dark);
+}
+
+.project-sidebar .card-title {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: var(--text-secondary);
+}
+</style>
+
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Perception Enabled Digital Agriculture Lab</h5>
+                    <p class="mb-0">Advancing precision agriculture through computer vision and cyber-physical systems.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        © 2025 Perception Enabled Digital Agriculture Lab, Cornell University
+                    </p>
+                    <p class="mb-0">
+                        <a href="mailto:lab@cornell.edu">lab@cornell.edu</a> | 
+                        <a href="https://www.cornell.edu">Cornell University</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yield Estimation on Perception Enabled Digital Agriculture Lab</title>
-    <link>https://jdnqcpdy.manus.space/tag/yield-estimation/</link>
+    <link>http://localhost:1313/tag/yield-estimation/</link>
     <description>Recent content in Yield Estimation on Perception Enabled Digital Agriculture Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jdnqcpdy.manus.space/tag/yield-estimation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tag/yield-estimation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computer Vision-Based Yield Estimation for Precision Agriculture</title>
-      <link>https://jdnqcpdy.manus.space/publications/computer-vision-yield-estimation-2024/</link>
+      <link>http://localhost:1313/publications/computer-vision-yield-estimation-2024/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/publications/computer-vision-yield-estimation-2024/</guid>
+      <guid>http://localhost:1313/publications/computer-vision-yield-estimation-2024/</guid>
       <description>A computer vision-based deep learning model for accurate and non-invasive crop yield estimation using drone and ground-based imagery, achieving 0.92 R-squared.</description>
     </item>
   </channel>

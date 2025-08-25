@@ -2,143 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Perception Enabled Digital Agriculture Lab</title>
-    <link>https://jdnqcpdy.manus.space/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Perception Enabled Digital Agriculture Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jdnqcpdy.manus.space/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computer Vision</title>
-      <link>https://jdnqcpdy.manus.space/tag/computer-vision/</link>
+      <link>http://localhost:1313/tag/computer-vision/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/computer-vision/</guid>
+      <guid>http://localhost:1313/tag/computer-vision/</guid>
       <description></description>
     </item>
     <item>
       <title>Irrigation</title>
-      <link>https://jdnqcpdy.manus.space/tag/irrigation/</link>
+      <link>http://localhost:1313/tag/irrigation/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/irrigation/</guid>
+      <guid>http://localhost:1313/tag/irrigation/</guid>
       <description></description>
     </item>
     <item>
       <title>Precision Agriculture</title>
-      <link>https://jdnqcpdy.manus.space/tag/precision-agriculture/</link>
+      <link>http://localhost:1313/tag/precision-agriculture/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/precision-agriculture/</guid>
+      <guid>http://localhost:1313/tag/precision-agriculture/</guid>
       <description></description>
     </item>
     <item>
       <title>Smartphone Sensing</title>
-      <link>https://jdnqcpdy.manus.space/tag/smartphone-sensing/</link>
+      <link>http://localhost:1313/tag/smartphone-sensing/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/smartphone-sensing/</guid>
+      <guid>http://localhost:1313/tag/smartphone-sensing/</guid>
       <description></description>
     </item>
     <item>
       <title>Vineyard</title>
-      <link>https://jdnqcpdy.manus.space/tag/vineyard/</link>
+      <link>http://localhost:1313/tag/vineyard/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/vineyard/</guid>
+      <guid>http://localhost:1313/tag/vineyard/</guid>
       <description></description>
     </item>
     <item>
       <title>Automation</title>
-      <link>https://jdnqcpdy.manus.space/tag/automation/</link>
+      <link>http://localhost:1313/tag/automation/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/automation/</guid>
+      <guid>http://localhost:1313/tag/automation/</guid>
       <description></description>
     </item>
     <item>
       <title>IoT</title>
-      <link>https://jdnqcpdy.manus.space/tag/iot/</link>
+      <link>http://localhost:1313/tag/iot/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/iot/</guid>
+      <guid>http://localhost:1313/tag/iot/</guid>
       <description></description>
     </item>
     <item>
       <title>Robotics</title>
-      <link>https://jdnqcpdy.manus.space/tag/robotics/</link>
+      <link>http://localhost:1313/tag/robotics/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/robotics/</guid>
+      <guid>http://localhost:1313/tag/robotics/</guid>
       <description></description>
     </item>
     <item>
       <title>STEM Education</title>
-      <link>https://jdnqcpdy.manus.space/tag/stem-education/</link>
+      <link>http://localhost:1313/tag/stem-education/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/stem-education/</guid>
+      <guid>http://localhost:1313/tag/stem-education/</guid>
       <description></description>
     </item>
     <item>
       <title>Viticulture</title>
-      <link>https://jdnqcpdy.manus.space/tag/viticulture/</link>
+      <link>http://localhost:1313/tag/viticulture/</link>
       <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/viticulture/</guid>
+      <guid>http://localhost:1313/tag/viticulture/</guid>
       <description></description>
     </item>
     <item>
       <title>Dataset</title>
-      <link>https://jdnqcpdy.manus.space/tag/dataset/</link>
+      <link>http://localhost:1313/tag/dataset/</link>
       <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/dataset/</guid>
+      <guid>http://localhost:1313/tag/dataset/</guid>
       <description></description>
     </item>
     <item>
       <title>Deep Learning</title>
-      <link>https://jdnqcpdy.manus.space/tag/deep-learning/</link>
+      <link>http://localhost:1313/tag/deep-learning/</link>
       <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/deep-learning/</guid>
+      <guid>http://localhost:1313/tag/deep-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Segmentation</title>
-      <link>https://jdnqcpdy.manus.space/tag/segmentation/</link>
+      <link>http://localhost:1313/tag/segmentation/</link>
       <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/segmentation/</guid>
+      <guid>http://localhost:1313/tag/segmentation/</guid>
       <description></description>
     </item>
     <item>
       <title>Yield Estimation</title>
-      <link>https://jdnqcpdy.manus.space/tag/yield-estimation/</link>
+      <link>http://localhost:1313/tag/yield-estimation/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/yield-estimation/</guid>
+      <guid>http://localhost:1313/tag/yield-estimation/</guid>
       <description></description>
     </item>
     <item>
       <title>CNN</title>
-      <link>https://jdnqcpdy.manus.space/tag/cnn/</link>
+      <link>http://localhost:1313/tag/cnn/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/cnn/</guid>
+      <guid>http://localhost:1313/tag/cnn/</guid>
       <description></description>
     </item>
     <item>
       <title>Crop Disease Detection</title>
-      <link>https://jdnqcpdy.manus.space/tag/crop-disease-detection/</link>
+      <link>http://localhost:1313/tag/crop-disease-detection/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/crop-disease-detection/</guid>
+      <guid>http://localhost:1313/tag/crop-disease-detection/</guid>
       <description></description>
     </item>
     <item>
       <title>Tag1</title>
-      <link>https://jdnqcpdy.manus.space/tag/tag1/</link>
+      <link>http://localhost:1313/tag/tag1/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/tag1/</guid>
+      <guid>http://localhost:1313/tag/tag1/</guid>
       <description></description>
     </item>
     <item>
       <title>Tag2</title>
-      <link>https://jdnqcpdy.manus.space/tag/tag2/</link>
+      <link>http://localhost:1313/tag/tag2/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/tag2/</guid>
+      <guid>http://localhost:1313/tag/tag2/</guid>
       <description></description>
     </item>
     <item>
       <title>Tag3</title>
-      <link>https://jdnqcpdy.manus.space/tag/tag3/</link>
+      <link>http://localhost:1313/tag/tag3/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/tag/tag3/</guid>
+      <guid>http://localhost:1313/tag/tag3/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Segmentation on Perception Enabled Digital Agriculture Lab</title>
-    <link>https://jdnqcpdy.manus.space/tag/segmentation/</link>
+    <link>http://localhost:1313/tag/segmentation/</link>
     <description>Recent content in Segmentation on Perception Enabled Digital Agriculture Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 11 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jdnqcpdy.manus.space/tag/segmentation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tag/segmentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ViViD-5K: A Dataset and Model for Grape Cluster and Berry Segmentation</title>
-      <link>https://jdnqcpdy.manus.space/projects/grapesam/</link>
+      <link>http://localhost:1313/projects/grapesam/</link>
       <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/projects/grapesam/</guid>
+      <guid>http://localhost:1313/projects/grapesam/</guid>
       <description>ViViD-5K is a large annotated image dataset and segmentation pipeline designed to automate grape cluster closure analysis in vineyards using computer vision.</description>
     </item>
   </channel>

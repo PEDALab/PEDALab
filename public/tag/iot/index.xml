@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IoT on Perception Enabled Digital Agriculture Lab</title>
-    <link>https://jdnqcpdy.manus.space/tag/iot/</link>
+    <link>http://localhost:1313/tag/iot/</link>
     <description>Recent content in IoT on Perception Enabled Digital Agriculture Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jdnqcpdy.manus.space/tag/iot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tag/iot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agriculture Experiential Robotics Platform</title>
-      <link>https://jdnqcpdy.manus.space/projects/agxrp/</link>
+      <link>http://localhost:1313/projects/agxrp/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://jdnqcpdy.manus.space/projects/agxrp/</guid>
+      <guid>http://localhost:1313/projects/agxrp/</guid>
       <description>A low-cost, open-source educational robotics platform that integrates precision agriculture and automation to teach students how to sustainably grow food using real-world engineering and data-driven techniques.</description>
     </item>
   </channel>

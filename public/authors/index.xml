@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Perception Enabled Digital Agriculture Lab</title>
-    <link>http://localhost:1313/authors/</link>
+    <link>https://www.pedaglab.com/authors/</link>
     <description>Recent content in Authors on Perception Enabled Digital Agriculture Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.pedaglab.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>David Lee</title>
-      <link>http://localhost:1313/author/david-lee/</link>
+      <link>https://www.pedaglab.com/author/david-lee/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/author/david-lee/</guid>
+      <guid>https://www.pedaglab.com/author/david-lee/</guid>
       <description></description>
     </item>
     <item>
       <title>Emily Rodriguez</title>
-      <link>http://localhost:1313/author/emily-rodriguez/</link>
+      <link>https://www.pedaglab.com/author/emily-rodriguez/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/author/emily-rodriguez/</guid>
+      <guid>https://www.pedaglab.com/author/emily-rodriguez/</guid>
       <description></description>
     </item>
     <item>
       <title>Michael Chen</title>
-      <link>http://localhost:1313/author/michael-chen/</link>
+      <link>https://www.pedaglab.com/author/michael-chen/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/author/michael-chen/</guid>
+      <guid>https://www.pedaglab.com/author/michael-chen/</guid>
       <description></description>
     </item>
     <item>
       <title>Perception Enabled Digital Agriculture Lab</title>
-      <link>http://localhost:1313/author/perception-enabled-digital-agriculture-lab/</link>
+      <link>https://www.pedaglab.com/author/perception-enabled-digital-agriculture-lab/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/author/perception-enabled-digital-agriculture-lab/</guid>
+      <guid>https://www.pedaglab.com/author/perception-enabled-digital-agriculture-lab/</guid>
       <description>&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;&#xA;&lt;p&gt;The Perception Enabled Digital Agriculture Lab at Cornell University is at the forefront of developing innovative computer vision and cyber-physical systems for precision agriculture. Our interdisciplinary team combines expertise in computer science, agricultural engineering, and data science to create cutting-edge solutions that enhance crop monitoring, yield prediction, and sustainable farming practices.&lt;/p&gt;&#xA;&lt;p&gt;Our research focuses on leveraging advanced machine learning algorithms, computer vision techniques, and robotic systems to address critical challenges in modern agriculture. We develop intelligent systems that can perceive, analyze, and respond to agricultural environments in real-time, enabling farmers to make data-driven decisions that optimize crop production while minimizing environmental impact.&lt;/p&gt;</description>
     </item>
   </channel>

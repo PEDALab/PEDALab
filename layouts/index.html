@@ -8,7 +8,7 @@
           <div class="row align-items-center">
             <div class="col-lg-8">
               <h1 class="hero-title display-3 mb-4 animate-fade-in-up">
-                Perception Enabled Digital Agriculture Lab
+                <span>Perception</span> <span>Enabled</span> <span>Digital</span> <span>Agriculture</span> <span>Lab</span>
               </h1>
               <p class="lead text-secondary mb-4 animate-fade-in-up" style="animation-delay: 0.2s;">
                 Advancing precision agriculture through computer vision and cyber-physical systems at Cornell University
@@ -264,6 +264,27 @@
 .stat-card:hover {
   transform: translateY(-4px);
   transition: transform 0.3s ease;
+}
+
+/* Hero title animation styles */
+.hero-title {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-title span {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.hero-title span:first-letter {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.hero-title:hover span:first-letter {
+  color: #FFFFFF;
 }
 </style>
 {{ end }}

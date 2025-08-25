@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Perception Enabled Digital Agriculture Lab</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>https://jdnqcpdy.manus.space/projects/</link>
     <description>Recent content in Projects on Perception Enabled Digital Agriculture Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jdnqcpdy.manus.space/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Smartphone-Based Irrigation Information in Vineyards</title>
-      <link>http://localhost:1313/projects/crop-coefficient/</link>
+      <link>https://jdnqcpdy.manus.space/projects/crop-coefficient/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/crop-coefficient/</guid>
+      <guid>https://jdnqcpdy.manus.space/projects/crop-coefficient/</guid>
       <description>We developed a simple and fast way to estimate crop water needs in vineyards using just a smartphone and computer vision instead of expensive sensors.</description>
     </item>
     <item>
       <title>Agriculture Experiential Robotics Platform</title>
-      <link>http://localhost:1313/projects/agxrp/</link>
+      <link>https://jdnqcpdy.manus.space/projects/agxrp/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/agxrp/</guid>
+      <guid>https://jdnqcpdy.manus.space/projects/agxrp/</guid>
       <description>A low-cost, open-source educational robotics platform that integrates precision agriculture and automation to teach students how to sustainably grow food using real-world engineering and data-driven techniques.</description>
     </item>
     <item>
       <title>Automated Vineyard Pruning Weight Estimation</title>
-      <link>http://localhost:1313/projects/pruning-weight/</link>
+      <link>https://jdnqcpdy.manus.space/projects/pruning-weight/</link>
       <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/pruning-weight/</guid>
+      <guid>https://jdnqcpdy.manus.space/projects/pruning-weight/</guid>
       <description>We developed an inexpensive, easy-to-use smartphone-based system that estimates grapevine pruning weight using structured light and computer vision.</description>
     </item>
     <item>
       <title>ViViD-5K: A Dataset and Model for Grape Cluster and Berry Segmentation</title>
-      <link>http://localhost:1313/projects/grapesam/</link>
+      <link>https://jdnqcpdy.manus.space/projects/grapesam/</link>
       <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/grapesam/</guid>
+      <guid>https://jdnqcpdy.manus.space/projects/grapesam/</guid>
       <description>ViViD-5K is a large annotated image dataset and segmentation pipeline designed to automate grape cluster closure analysis in vineyards using computer vision.</description>
     </item>
     <item>
       <title>Martha: Mobile and Inflatable Interface for Human-Robot Interaction</title>
-      <link>http://localhost:1313/projects/martha/</link>
+      <link>https://jdnqcpdy.manus.space/projects/martha/</link>
       <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/martha/</guid>
+      <guid>https://jdnqcpdy.manus.space/projects/martha/</guid>
       <description>An open-source, low-cost, soft-bodied mobile robot designed for safe, multimodal interaction in crowded and unstructured environments.</description>
     </item>
     <item>
       <title>Prebloom Cluster Count Prediction in Vineyards</title>
-      <link>http://localhost:1313/projects/yield_estimation/</link>
+      <link>https://jdnqcpdy.manus.space/projects/yield_estimation/</link>
       <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/yield_estimation/</guid>
+      <guid>https://jdnqcpdy.manus.space/projects/yield_estimation/</guid>
       <description>A low-cost, computer vision pipeline that counts grape clusters before flowering using just a smartphone and AI.</description>
     </item>
   </channel>

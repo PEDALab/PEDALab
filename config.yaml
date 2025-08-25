@@ -1,4 +1,5 @@
 baseURL: 'https://www.pedaglab.com'
+relativeURLs: true
 languageCode: 'en-us'
 title: 'Perception Enabled Digital Agriculture Lab'
 theme: 'blox-tailwind'

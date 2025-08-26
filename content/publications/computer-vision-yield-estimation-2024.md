@@ -1,14 +1,14 @@
 ---
 title: "Computer Vision-Based Yield Estimation for Precision Agriculture"
 authors:
-- David Lee
-- Michael Chen
-- Emily Rodriguez
+- Jonathan Jaramillo 
+- Justine Vanden Heuvel
+- Kirstin Petersen
 date: "2024-03-01T00:00:00Z"
-doi: "10.1016/j.agarobot.2024.100001"
+doi: "https://doi.org/10.3389/fagro.2021.648080"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2024-03-01T00:00:00Z"
+publishDate: "2021-04-07T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -55,7 +55,7 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-- yield-prediction
+- yield_estimation
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.

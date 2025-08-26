@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Inflatable Robots on Perception Enabled Digital Agriculture Lab</title>
-    <link>http://localhost:1313/tag/inflatable-robots/</link>
+    <link>https://www.pedaglab.com/tag/inflatable-robots/</link>
     <description>Recent content in Inflatable Robots on Perception Enabled Digital Agriculture Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Jul 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tag/inflatable-robots/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.pedaglab.com/tag/inflatable-robots/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mobile and Inflatable Interface for Human Robot Interaction</title>
-      <link>http://localhost:1313/publications/inflatable-robot/</link>
+      <link>https://www.pedaglab.com/publications/inflatable-robot/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/inflatable-robot/</guid>
+      <guid>https://www.pedaglab.com/publications/inflatable-robot/</guid>
       <description>We introduce a low-cost mobile robot platform with an inflatable human-scale interface, designed for safe and engaging human-robot interaction in crowded environments.</description>
     </item>
   </channel>

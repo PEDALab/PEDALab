@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publication_types on Perception Enabled Digital Agriculture Lab</title>
-    <link>http://localhost:1313/publication_types/</link>
+    <link>https://www.pedaglab.com/publication_types/</link>
     <description>Recent content in Publication_types on Perception Enabled Digital Agriculture Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.pedaglab.com/publication_types/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>4</title>
-      <link>http://localhost:1313/publication-type/4/</link>
+      <link>https://www.pedaglab.com/publication-type/4/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication-type/4/</guid>
+      <guid>https://www.pedaglab.com/publication-type/4/</guid>
       <description></description>
     </item>
     <item>
       <title>1</title>
-      <link>http://localhost:1313/publication-type/1/</link>
+      <link>https://www.pedaglab.com/publication-type/1/</link>
       <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication-type/1/</guid>
+      <guid>https://www.pedaglab.com/publication-type/1/</guid>
       <description></description>
     </item>
     <item>
       <title>2</title>
-      <link>http://localhost:1313/publication-type/2/</link>
+      <link>https://www.pedaglab.com/publication-type/2/</link>
       <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication-type/2/</guid>
+      <guid>https://www.pedaglab.com/publication-type/2/</guid>
       <description></description>
     </item>
   </channel>

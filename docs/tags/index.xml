@@ -2,192 +2,178 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Perception Enabled Digital Agriculture Lab</title>
-    <link>https://www.pedaglab.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Perception Enabled Digital Agriculture Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.pedaglab.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computer Vision</title>
-      <link>https://www.pedaglab.com/tag/computer-vision/</link>
+      <link>http://localhost:1313/tag/computer-vision/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/computer-vision/</guid>
+      <guid>http://localhost:1313/tag/computer-vision/</guid>
       <description></description>
     </item>
     <item>
       <title>Crop Coefficient</title>
-      <link>https://www.pedaglab.com/tag/crop-coefficient/</link>
+      <link>http://localhost:1313/tag/crop-coefficient/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/crop-coefficient/</guid>
+      <guid>http://localhost:1313/tag/crop-coefficient/</guid>
       <description></description>
     </item>
     <item>
       <title>Evapotranspiration</title>
-      <link>https://www.pedaglab.com/tag/evapotranspiration/</link>
+      <link>http://localhost:1313/tag/evapotranspiration/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/evapotranspiration/</guid>
+      <guid>http://localhost:1313/tag/evapotranspiration/</guid>
       <description></description>
     </item>
     <item>
       <title>Irrigation</title>
-      <link>https://www.pedaglab.com/tag/irrigation/</link>
+      <link>http://localhost:1313/tag/irrigation/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/irrigation/</guid>
+      <guid>http://localhost:1313/tag/irrigation/</guid>
       <description></description>
     </item>
     <item>
       <title>Viticulture</title>
-      <link>https://www.pedaglab.com/tag/viticulture/</link>
+      <link>http://localhost:1313/tag/viticulture/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/viticulture/</guid>
+      <guid>http://localhost:1313/tag/viticulture/</guid>
       <description></description>
     </item>
     <item>
       <title>Precision Agriculture</title>
-      <link>https://www.pedaglab.com/tag/precision-agriculture/</link>
+      <link>http://localhost:1313/tag/precision-agriculture/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/precision-agriculture/</guid>
+      <guid>http://localhost:1313/tag/precision-agriculture/</guid>
       <description></description>
     </item>
     <item>
       <title>Smartphone Sensing</title>
-      <link>https://www.pedaglab.com/tag/smartphone-sensing/</link>
+      <link>http://localhost:1313/tag/smartphone-sensing/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/smartphone-sensing/</guid>
+      <guid>http://localhost:1313/tag/smartphone-sensing/</guid>
       <description></description>
     </item>
     <item>
       <title>Vineyard</title>
-      <link>https://www.pedaglab.com/tag/vineyard/</link>
+      <link>http://localhost:1313/tag/vineyard/</link>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/vineyard/</guid>
+      <guid>http://localhost:1313/tag/vineyard/</guid>
       <description></description>
     </item>
     <item>
       <title>Automation</title>
-      <link>https://www.pedaglab.com/tag/automation/</link>
+      <link>http://localhost:1313/tag/automation/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/automation/</guid>
+      <guid>http://localhost:1313/tag/automation/</guid>
       <description></description>
     </item>
     <item>
       <title>IoT</title>
-      <link>https://www.pedaglab.com/tag/iot/</link>
+      <link>http://localhost:1313/tag/iot/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/iot/</guid>
+      <guid>http://localhost:1313/tag/iot/</guid>
       <description></description>
     </item>
     <item>
       <title>Robotics</title>
-      <link>https://www.pedaglab.com/tag/robotics/</link>
+      <link>http://localhost:1313/tag/robotics/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/robotics/</guid>
+      <guid>http://localhost:1313/tag/robotics/</guid>
       <description></description>
     </item>
     <item>
       <title>STEM Education</title>
-      <link>https://www.pedaglab.com/tag/stem-education/</link>
+      <link>http://localhost:1313/tag/stem-education/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/stem-education/</guid>
+      <guid>http://localhost:1313/tag/stem-education/</guid>
       <description></description>
     </item>
     <item>
       <title>Pruning Weight</title>
-      <link>https://www.pedaglab.com/tag/pruning-weight/</link>
+      <link>http://localhost:1313/tag/pruning-weight/</link>
       <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/pruning-weight/</guid>
+      <guid>http://localhost:1313/tag/pruning-weight/</guid>
       <description></description>
     </item>
     <item>
       <title>Dataset</title>
-      <link>https://www.pedaglab.com/tag/dataset/</link>
+      <link>http://localhost:1313/tag/dataset/</link>
       <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/dataset/</guid>
+      <guid>http://localhost:1313/tag/dataset/</guid>
       <description></description>
     </item>
     <item>
       <title>Deep Learning</title>
-      <link>https://www.pedaglab.com/tag/deep-learning/</link>
+      <link>http://localhost:1313/tag/deep-learning/</link>
       <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/deep-learning/</guid>
+      <guid>http://localhost:1313/tag/deep-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Segmentation</title>
-      <link>https://www.pedaglab.com/tag/segmentation/</link>
+      <link>http://localhost:1313/tag/segmentation/</link>
       <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/segmentation/</guid>
+      <guid>http://localhost:1313/tag/segmentation/</guid>
       <description></description>
     </item>
     <item>
       <title>Yield Estimation</title>
-      <link>https://www.pedaglab.com/tag/yield-estimation/</link>
+      <link>http://localhost:1313/tag/yield-estimation/</link>
       <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/yield-estimation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CNN</title>
-      <link>https://www.pedaglab.com/tag/cnn/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/cnn/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Crop Disease Detection</title>
-      <link>https://www.pedaglab.com/tag/crop-disease-detection/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/crop-disease-detection/</guid>
+      <guid>http://localhost:1313/tag/yield-estimation/</guid>
       <description></description>
     </item>
     <item>
       <title>Tag1</title>
-      <link>https://www.pedaglab.com/tag/tag1/</link>
+      <link>http://localhost:1313/tag/tag1/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/tag1/</guid>
+      <guid>http://localhost:1313/tag/tag1/</guid>
       <description></description>
     </item>
     <item>
       <title>Tag2</title>
-      <link>https://www.pedaglab.com/tag/tag2/</link>
+      <link>http://localhost:1313/tag/tag2/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/tag2/</guid>
+      <guid>http://localhost:1313/tag/tag2/</guid>
       <description></description>
     </item>
     <item>
       <title>Tag3</title>
-      <link>https://www.pedaglab.com/tag/tag3/</link>
+      <link>http://localhost:1313/tag/tag3/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/tag3/</guid>
+      <guid>http://localhost:1313/tag/tag3/</guid>
       <description></description>
     </item>
     <item>
       <title>Human-Robot Interaction</title>
-      <link>https://www.pedaglab.com/tag/human-robot-interaction/</link>
+      <link>http://localhost:1313/tag/human-robot-interaction/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/human-robot-interaction/</guid>
+      <guid>http://localhost:1313/tag/human-robot-interaction/</guid>
       <description></description>
     </item>
     <item>
       <title>Inflatable Robots</title>
-      <link>https://www.pedaglab.com/tag/inflatable-robots/</link>
+      <link>http://localhost:1313/tag/inflatable-robots/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/inflatable-robots/</guid>
+      <guid>http://localhost:1313/tag/inflatable-robots/</guid>
       <description></description>
     </item>
     <item>
       <title>Mobile Robotics</title>
-      <link>https://www.pedaglab.com/tag/mobile-robotics/</link>
+      <link>http://localhost:1313/tag/mobile-robotics/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/mobile-robotics/</guid>
+      <guid>http://localhost:1313/tag/mobile-robotics/</guid>
       <description></description>
     </item>
     <item>
       <title>Soft Robotics</title>
-      <link>https://www.pedaglab.com/tag/soft-robotics/</link>
+      <link>http://localhost:1313/tag/soft-robotics/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/tag/soft-robotics/</guid>
+      <guid>http://localhost:1313/tag/soft-robotics/</guid>
       <description></description>
     </item>
   </channel>

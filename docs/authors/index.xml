@@ -2,88 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Perception Enabled Digital Agriculture Lab</title>
-    <link>https://www.pedaglab.com/authors/</link>
+    <link>http://localhost:1313/authors/</link>
     <description>Recent content in Authors on Perception Enabled Digital Agriculture Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.pedaglab.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jonathan Jaramillo</title>
-      <link>https://www.pedaglab.com/author/jonathan-jaramillo/</link>
+      <link>http://localhost:1313/author/jonathan-jaramillo/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/author/jonathan-jaramillo/</guid>
+      <guid>http://localhost:1313/author/jonathan-jaramillo/</guid>
       <description></description>
     </item>
     <item>
       <title>Justine Vanden Heuvel</title>
-      <link>https://www.pedaglab.com/author/justine-vanden-heuvel/</link>
+      <link>http://localhost:1313/author/justine-vanden-heuvel/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/author/justine-vanden-heuvel/</guid>
+      <guid>http://localhost:1313/author/justine-vanden-heuvel/</guid>
       <description></description>
     </item>
     <item>
       <title>Kirstin Petersen</title>
-      <link>https://www.pedaglab.com/author/kirstin-petersen/</link>
+      <link>http://localhost:1313/author/kirstin-petersen/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/author/kirstin-petersen/</guid>
+      <guid>http://localhost:1313/author/kirstin-petersen/</guid>
       <description></description>
     </item>
     <item>
       <title>Aaron Wilhelm</title>
-      <link>https://www.pedaglab.com/author/aaron-wilhelm/</link>
+      <link>http://localhost:1313/author/aaron-wilhelm/</link>
       <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/author/aaron-wilhelm/</guid>
+      <guid>http://localhost:1313/author/aaron-wilhelm/</guid>
       <description></description>
     </item>
     <item>
       <title>Nils Napp</title>
-      <link>https://www.pedaglab.com/author/nils-napp/</link>
+      <link>http://localhost:1313/author/nils-napp/</link>
       <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/author/nils-napp/</guid>
+      <guid>http://localhost:1313/author/nils-napp/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>Emily Rodriguez</title>
-      <link>https://www.pedaglab.com/author/emily-rodriguez/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/author/emily-rodriguez/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Michael Chen</title>
-      <link>https://www.pedaglab.com/author/michael-chen/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/author/michael-chen/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Perception Enabled Digital Agriculture Lab</title>
-      <link>https://www.pedaglab.com/author/perception-enabled-digital-agriculture-lab/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/author/perception-enabled-digital-agriculture-lab/</guid>
-      <description>&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;&#xA;&lt;p&gt;The Perception Enabled Digital Agriculture Lab at Cornell University is at the forefront of developing innovative computer vision and cyber-physical systems for precision agriculture. Our interdisciplinary team combines expertise in computer science, agricultural engineering, and data science to create cutting-edge solutions that enhance crop monitoring, yield prediction, and sustainable farming practices.&lt;/p&gt;&#xA;&lt;p&gt;Our research focuses on leveraging advanced machine learning algorithms, computer vision techniques, and robotic systems to address critical challenges in modern agriculture. We develop intelligent systems that can perceive, analyze, and respond to agricultural environments in real-time, enabling farmers to make data-driven decisions that optimize crop production while minimizing environmental impact.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Andrew Lin</title>
-      <link>https://www.pedaglab.com/author/andrew-lin/</link>
+      <link>http://localhost:1313/author/andrew-lin/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/author/andrew-lin/</guid>
+      <guid>http://localhost:1313/author/andrew-lin/</guid>
       <description></description>
     </item>
     <item>
       <title>Emma Sung</title>
-      <link>https://www.pedaglab.com/author/emma-sung/</link>
+      <link>http://localhost:1313/author/emma-sung/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/author/emma-sung/</guid>
+      <guid>http://localhost:1313/author/emma-sung/</guid>
       <description></description>
     </item>
     <item>
       <title>Isabel Jane Hunt Richter</title>
-      <link>https://www.pedaglab.com/author/isabel-jane-hunt-richter/</link>
+      <link>http://localhost:1313/author/isabel-jane-hunt-richter/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/author/isabel-jane-hunt-richter/</guid>
+      <guid>http://localhost:1313/author/isabel-jane-hunt-richter/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Perception Enabled Digital Agriculture Lab</title>
+      <link>http://localhost:1313/author/perception-enabled-digital-agriculture-lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/author/perception-enabled-digital-agriculture-lab/</guid>
+      <description>&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;&#xA;&lt;p&gt;The Perception Enabled Digital Agriculture Lab at Cornell University is at the forefront of developing innovative computer vision and cyber-physical systems for precision agriculture. Our interdisciplinary team combines expertise in computer science, agricultural engineering, and data science to create cutting-edge solutions that enhance crop monitoring, yield prediction, and sustainable farming practices.&lt;/p&gt;&#xA;&lt;p&gt;Our research focuses on leveraging advanced machine learning algorithms, computer vision techniques, and robotic systems to address critical challenges in modern agriculture. We develop intelligent systems that can perceive, analyze, and respond to agricultural environments in real-time, enabling farmers to make data-driven decisions that optimize crop production while minimizing environmental impact.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

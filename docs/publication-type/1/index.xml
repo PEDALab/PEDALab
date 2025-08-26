@@ -15,5 +15,12 @@
       <guid>https://www.pedaglab.com/publications/pruning-weight-estimation/</guid>
       <description>We present a low-cost, computer vision-based approach using smartphones and structured light to estimate vineyard pruning weight, outperforming existing methods for VSP vines and extending to HC vines.</description>
     </item>
+    <item>
+      <title>Mobile and Inflatable Interface for Human Robot Interaction</title>
+      <link>https://www.pedaglab.com/publications/inflatable-robot/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.pedaglab.com/publications/inflatable-robot/</guid>
+      <description>We introduce a low-cost mobile robot platform with an inflatable human-scale interface, designed for safe and engaging human-robot interaction in crowded environments.</description>
+    </item>
   </channel>
 </rss>

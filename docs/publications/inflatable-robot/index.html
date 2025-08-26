@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kirstin Petersen | Perception Enabled Digital Agriculture Lab</title>
+    <title>Mobile and Inflatable Interface for Human Robot Interaction | Perception Enabled Digital Agriculture Lab</title>
     
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -204,52 +204,103 @@
     
     <main>
         
+<div class="container-fluid py-5">
   <div class="container">
-    <h1>Kirstin Petersen</h1>
-    <div class="row">
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Toward Estimating the Crop Coefficient of Vineyards Using a Smartphone Camera</h5>
-              <p class="card-text">We developed a smartphone camera and computer vision-based method to estimate vineyard crop coefficient by measuring shaded area, providing a low-cost, accessible alternative to Paso Panel measurements.</p>
-              <a href="/publications/crop-coefficient-estimation/" class="btn btn-primary">Read More</a>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <article>
+          <header class="text-center mb-5">
+            <h1 class="display-4 mb-3">Mobile and Inflatable Interface for Human Robot Interaction</h1>
+            <div class="text-muted mb-3">
+              <i class="fas fa-users me-2"></i>Jonathan Jaramillo, Andrew Lin, Emma Sung, Isabel Jane Hunt Richter, Kirstin Petersen
+              <span class="mx-2">|</span>
+              <i class="far fa-calendar-alt me-2"></i><time datetime="2021-07-14">July 14, 2021</time>
             </div>
+          </header>
+          <div class="article-content text-secondary">
+            <h2 id="introduction">Introduction</h2>
+<p>Populated settings such as festivals, conventions, or emergency evacuations require efficient crowd management and safe information dissemination. Traditional service robots are often rigid, costly, and limited to structured indoor environments. To address these challenges, this work introduces a mobile robot with an inflatable interface that emphasizes safety, adaptability, agility, and affordability.</p>
+<h2 id="methodology">Methodology</h2>
+<p>The platform, nicknamed <em>Martha</em>, combines a rover base with a soft, inflatable interface. The rover base uses skid steering, four motors, and a lightweight aluminum chassis, capable of jogging-speed locomotion over uneven terrain. The inflatable component is made of ripstop nylon and integrates a projector, camera, speakers, and microphone for multimodal interaction. The interface can expand to human-scale for engagement or contract to navigate confined spaces. All control runs on a Raspberry Pi 4 with a m&hellip;</p>
+<h2 id="results">Results</h2>
+<p>The robot weighs 4.5 kg, travels at speeds up to 1.71 m/s, and supports over an hour of continuous operation. Its inflatable interface fully inflates in approximately 40 seconds and deflates in 50 seconds, enabling both compact storage and large-scale interaction. Gesture recognition, text-to-speech, and camera-projector-based input allow diverse human-robot interaction modes. The entire system costs approximately $1,200 USD and is composed primarily of off-the-shelf components and 3D-printed parts.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Compared with prior inflatable robots designed for specific groups (e.g., Puffy for children with developmental disorders), Martha broadens applicability to general audiences in public and emergency contexts. The inflatable design enhances safety, the modular software and hardware architecture facilitates adaptation, and the affordability promotes replication and mass deployment. The approach demonstrates how soft robotics can merge with mobile platforms to support scalable, interactive human-robot sys&hellip;</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This research introduces a mobile, inflatable-interface robot designed for robust, safe, and versatile human-robot interaction. Its lightweight, modular, and cost-effective design makes it suitable for both research and real-world applications in dynamic, crowded environments. Future work aims to integrate ROS-based autonomy, enhance gesture recognition, and explore additional mechanical capabilities for resilience and cooperative operation.</p>
+
           </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Inexpensive, Automated Pruning Weight Estimation in Vineyards</h5>
-              <p class="card-text">We present a low-cost, computer vision-based approach using smartphones and structured light to estimate vineyard pruning weight, outperforming existing methods for VSP vines and extending to HC vines.</p>
-              <a href="/publications/pruning-weight-estimation/" class="btn btn-primary">Read More</a>
-            </div>
+          <div class="publication-links text-center mt-5">
+            
+            
+            
+            <a href="/projects/martha" class="btn btn-outline" target="_blank" rel="noopener">Project Page</a>
+            
           </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Low-Cost, Computer Vision-Based, Prebloom Cluster Count Prediction in Vineyards</h5>
-              <p class="card-text">We developed a computer vision system that uses videos taken with a smartphone to estimate grape yield more accurately and efficiently than traditional manual counting methods.</p>
-              <a href="/publications/computer-vision-yield-estimation-2024/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Mobile and Inflatable Interface for Human Robot Interaction</h5>
-              <p class="card-text">We introduce a low-cost mobile robot platform with an inflatable human-scale interface, designed for safe and engaging human-robot interaction in crowded environments.</p>
-              <a href="/publications/inflatable-robot/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
+        </article>
+      </div>
     </div>
   </div>
+</div>
+
+<style>
+.article-content h2, .article-content h3, .article-content h4, .article-content h5, .article-content h6 {
+  color: var(--text-primary);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.article-content p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.article-content ul, .article-content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+}
+
+.article-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.article-content a:hover {
+  text-decoration: underline;
+}
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article-content blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1rem;
+  margin-left: 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.article-content pre {
+  background-color: var(--surface-dark);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.article-content code {
+  font-family: "Fira Code", "Cascadia Code", monospace;
+  color: var(--accent-color);
+}
+</style>
 
     </main>
 

@@ -29,5 +29,12 @@
       <guid>https://www.pedaglab.com/publications/computer-vision-yield-estimation-2024/</guid>
       <description>We developed a computer vision system that uses videos taken with a smartphone to estimate grape yield more accurately and efficiently than traditional manual counting methods.</description>
     </item>
+    <item>
+      <title>Mobile and Inflatable Interface for Human Robot Interaction</title>
+      <link>https://www.pedaglab.com/publications/inflatable-robot/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.pedaglab.com/publications/inflatable-robot/</guid>
+      <description>We introduce a low-cost mobile robot platform with an inflatable human-scale interface, designed for safe and engaging human-robot interaction in crowded environments.</description>
+    </item>
   </channel>
 </rss>

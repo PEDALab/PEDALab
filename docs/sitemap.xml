@@ -2,11 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.pedaglab.com/publication-type/4/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.pedaglab.com/authors/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.pedaglab.com/tag/computer-vision/</loc>
-    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.pedaglab.com/tag/crop-coefficient/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.pedaglab.com/tag/evapotranspiration/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.pedaglab.com/tag/irrigation/</loc>
-    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.pedaglab.com/author/jonathan-jaramillo/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.pedaglab.com/author/justine-vanden-heuvel/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.pedaglab.com/author/kirstin-petersen/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.pedaglab.com/publication_types/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.pedaglab.com/publications/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.pedaglab.com/tags/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.pedaglab.com/publications/crop-coefficient-estimation/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.pedaglab.com/tag/viticulture/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.pedaglab.com/tag/precision-agriculture/</loc>
     <lastmod>2025-06-11T00:00:00+00:00</lastmod>
@@ -18,9 +54,6 @@
     <lastmod>2025-06-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.pedaglab.com/projects/crop-coefficient/</loc>
-    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.pedaglab.com/tags/</loc>
     <lastmod>2025-06-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.pedaglab.com/tag/vineyard/</loc>
@@ -59,34 +92,13 @@
     <loc>https://www.pedaglab.com/author/aaron-wilhelm/</loc>
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.pedaglab.com/authors/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.pedaglab.com/publications/pruning-weight-estimation/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.pedaglab.com/author/jonathan-jaramillo/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.pedaglab.com/author/justine-vanden-heuvel/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.pedaglab.com/author/kirstin-petersen/</loc>
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.pedaglab.com/author/nils-napp/</loc>
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.pedaglab.com/tag/pruning-weight/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.pedaglab.com/publication_types/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.pedaglab.com/publications/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.pedaglab.com/tag/viticulture/</loc>
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.pedaglab.com/projects/pruning-weight/</loc>

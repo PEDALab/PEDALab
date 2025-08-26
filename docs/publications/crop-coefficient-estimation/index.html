@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tags | Perception Enabled Digital Agriculture Lab</title>
+    <title>Toward Estimating the Crop Coefficient of Vineyards Using a Smartphone Camera | Perception Enabled Digital Agriculture Lab</title>
     
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -204,232 +204,105 @@
     
     <main>
         
+<div class="container-fluid py-5">
   <div class="container">
-    <h1>Tags</h1>
-    <div class="row">
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Computer Vision</h5>
-              <p class="card-text"></p>
-              <a href="/tag/computer-vision/" class="btn btn-primary">Read More</a>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <article>
+          <header class="text-center mb-5">
+            <h1 class="display-4 mb-3">Toward Estimating the Crop Coefficient of Vineyards Using a Smartphone Camera</h1>
+            <div class="text-muted mb-3">
+              <i class="fas fa-users me-2"></i>Jonathan Jaramillo, Justine Vanden Heuvel, Kirstin Petersen
+              <span class="mx-2">|</span>
+              <i class="far fa-calendar-alt me-2"></i><time datetime="2025-08-01">August 1, 2025</time>
             </div>
+          </header>
+          <div class="article-content text-secondary">
+            <h2 id="introduction">Introduction</h2>
+<p>Measuring evapotranspiration (ETc) is critical for managing vineyard irrigation efficiently. Traditional approaches use the two-step crop coefficient method, where ETc is modeled as the product of crop coefficient (Kc) and reference evapotranspiration (ETo). While models such as the FAO Penman-Monteith equation provide reliable estimates, vineyard-specific measurements are necessary for precise management. Existing methods like grid paper and Paso Panel sensors are labor-intensive, bulky, or insufficiently &hellip;</p>
+<h2 id="methodology">Methodology</h2>
+<p>Videos of shaded vineyard ground were captured with a smartphone camera during sunny conditions. A computer vision pipeline was developed, incorporating structure-from-motion (SfM), 3D surface reconstruction, and U-Net segmentation to classify shaded and unshaded areas. Paso Panel measurements were collected concurrently for comparison and calibration. Polynomial fitting was applied to better model the relationship between Paso Panel current and shaded area, improving on earlier linear assumptions.</p>
+<h2 id="results">Results</h2>
+<p>The CV-based method demonstrated a correlation of $R^2 = 0.68$ with Paso Panel readings. The U-Net segmentation achieved a validation intersection-over-union of 0.91, and the approach successfully generated voxelized reconstructions of shaded ground under vines. This method proved faster and simpler than Paso Panel use, with data collection taking only about one minute per row using a handheld smartphone.</p>
+<h2 id="discussion">Discussion</h2>
+<p>Compared to aerial or satellite-based approaches, the proposed ground-based CV method provides higher spatial and temporal resolution at lower cost, requiring only a smartphone. It enables mapping of crop coefficient variation at the panel or vine level, facilitating integration into variable-rate irrigation systems. Although current processing times remain high, pipeline optimization and GPU acceleration are expected to make the method practical for wider deployment. The method is particularly useful for &hellip;</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This study demonstrates the feasibility of using smartphone-based computer vision to estimate crop coefficient in vineyards. The approach is affordable, easy to use, and offers improved spatial resolution over existing field methods. With further validation and optimization, this method has potential for practical adoption by growers and integration into vineyard decision support systems.</p>
+
           </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Crop Coefficient</h5>
-              <p class="card-text"></p>
-              <a href="/tag/crop-coefficient/" class="btn btn-primary">Read More</a>
-            </div>
+          <div class="publication-links text-center mt-5">
+            
+            <a href="https://www.ajevonline.org/content/76/2/0760020" class="btn btn-primary me-3" target="_blank" rel="noopener">View PDF</a>
+            
+            
+            
+            <a href="/projects/crop-coefficient" class="btn btn-outline" target="_blank" rel="noopener">Project Page</a>
+            
           </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Evapotranspiration</h5>
-              <p class="card-text"></p>
-              <a href="/tag/evapotranspiration/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Irrigation</h5>
-              <p class="card-text"></p>
-              <a href="/tag/irrigation/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Viticulture</h5>
-              <p class="card-text"></p>
-              <a href="/tag/viticulture/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Precision Agriculture</h5>
-              <p class="card-text"></p>
-              <a href="/tag/precision-agriculture/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Smartphone Sensing</h5>
-              <p class="card-text"></p>
-              <a href="/tag/smartphone-sensing/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Vineyard</h5>
-              <p class="card-text"></p>
-              <a href="/tag/vineyard/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Automation</h5>
-              <p class="card-text"></p>
-              <a href="/tag/automation/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">IoT</h5>
-              <p class="card-text"></p>
-              <a href="/tag/iot/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Robotics</h5>
-              <p class="card-text"></p>
-              <a href="/tag/robotics/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">STEM Education</h5>
-              <p class="card-text"></p>
-              <a href="/tag/stem-education/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Pruning Weight</h5>
-              <p class="card-text"></p>
-              <a href="/tag/pruning-weight/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Dataset</h5>
-              <p class="card-text"></p>
-              <a href="/tag/dataset/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Deep Learning</h5>
-              <p class="card-text"></p>
-              <a href="/tag/deep-learning/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Segmentation</h5>
-              <p class="card-text"></p>
-              <a href="/tag/segmentation/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Yield Estimation</h5>
-              <p class="card-text"></p>
-              <a href="/tag/yield-estimation/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">CNN</h5>
-              <p class="card-text"></p>
-              <a href="/tag/cnn/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Crop Disease Detection</h5>
-              <p class="card-text"></p>
-              <a href="/tag/crop-disease-detection/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Tag1</h5>
-              <p class="card-text"></p>
-              <a href="/tag/tag1/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Tag2</h5>
-              <p class="card-text"></p>
-              <a href="/tag/tag2/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Tag3</h5>
-              <p class="card-text"></p>
-              <a href="/tag/tag3/" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      
+        </article>
+      </div>
     </div>
   </div>
+</div>
+
+<style>
+.article-content h2, .article-content h3, .article-content h4, .article-content h5, .article-content h6 {
+  color: var(--text-primary);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.article-content p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.article-content ul, .article-content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+}
+
+.article-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.article-content a:hover {
+  text-decoration: underline;
+}
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article-content blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1rem;
+  margin-left: 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.article-content pre {
+  background-color: var(--surface-dark);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.article-content code {
+  font-family: "Fira Code", "Cascadia Code", monospace;
+  color: var(--accent-color);
+}
+</style>
 
     </main>
 

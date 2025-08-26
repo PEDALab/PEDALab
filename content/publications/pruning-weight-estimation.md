@@ -37,7 +37,7 @@ featured: true
 url_pdf: 'https://ieeexplore.ieee.org/document/10610164'
 url_dataset: ''
 url_poster: ''
-url_project: '/projects/pruning_weight_estimation'
+url_project: '/projects/pruning-weight'
 url_slides: ''
 url_source: ''
 url_video: ''
@@ -51,7 +51,7 @@ image:
 
 # Associated Projects (optional).
 projects:
-- pruning_weight_estimation
+- pruning-weight
 
 # Slides (optional).
 slides: ""

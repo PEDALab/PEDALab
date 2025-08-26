@@ -6,8 +6,15 @@
     <description>Recent content in Kirstin Petersen on Perception Enabled Digital Agriculture Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.pedaglab.com/author/kirstin-petersen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Toward Estimating the Crop Coefficient of Vineyards Using a Smartphone Camera</title>
+      <link>https://www.pedaglab.com/publications/crop-coefficient-estimation/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.pedaglab.com/publications/crop-coefficient-estimation/</guid>
+      <description>We developed a smartphone camera and computer vision-based method to estimate vineyard crop coefficient by measuring shaded area, providing a low-cost, accessible alternative to Paso Panel measurements.</description>
+    </item>
     <item>
       <title>Inexpensive, Automated Pruning Weight Estimation in Vineyards</title>
       <link>https://www.pedaglab.com/publications/pruning-weight-estimation/</link>

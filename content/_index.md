@@ -29,8 +29,8 @@ featured_projects:
   - path: "projects/agxrp"
   - path: "projects/grapesam"
 featured_publications:
-  - path: "publications/pruning-weight"
-  - path: "publications/crop-coefficient"
+  - path: "publications/pruning-weight-estimation"
+  - path: "publications/crop-coefficient-estimation"
 featured_news:
   - path: "news/new-grant-2025"
 featured_team:

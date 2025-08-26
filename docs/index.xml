@@ -93,13 +93,6 @@
       <description>A low-cost, computer vision pipeline that counts grape clusters before flowering using just a smartphone and AI.</description>
     </item>
     <item>
-      <title>CS 5787: Computer Vision for Agriculture</title>
-      <link>https://www.pedaglab.com/courses/cs5787/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.pedaglab.com/courses/cs5787/</guid>
-      <description>Advanced topics in computer vision techniques applied to agricultural challenges, including crop phenotyping, disease detection, and yield estimation.</description>
-    </item>
-    <item>
       <title>Dr. Sarah Johnson</title>
       <link>https://www.pedaglab.com/people/sarah-johnson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -112,6 +105,27 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.pedaglab.com/people/some-other-person/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>SYSEN 5411: Introduction to Robotics</title>
+      <link>https://www.pedaglab.com/courses/sysen5411/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.pedaglab.com/courses/sysen5411/</guid>
+      <description>A hands-on introduction to robotics, focusing on the design, programming, and control of autonomous robots using the XRP Robotics Platform.</description>
+    </item>
+    <item>
+      <title>SYSEN 5412: Creating Solutions with Embedded Systems</title>
+      <link>https://www.pedaglab.com/courses/sysen5410/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.pedaglab.com/courses/sysen5410/</guid>
+      <description>An introduction to cyber-physical systems, focusing on the integration of computational and physical components through hands-on projects involving microcontrollers, sensors, and autonomous robotics.</description>
+    </item>
+    <item>
+      <title>SYSEN 5412: Creating Solutions with Embedded Systems</title>
+      <link>https://www.pedaglab.com/courses/sysen5412/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.pedaglab.com/courses/sysen5412/</guid>
+      <description>An introduction to embedded systems, focusing on microcontroller-based design, programming, and hands-on project development.</description>
     </item>
   </channel>
 </rss>

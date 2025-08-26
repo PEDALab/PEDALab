@@ -172,8 +172,6 @@
   </url><url>
     <loc>https://www.pedaglab.com/courses/</loc>
   </url><url>
-    <loc>https://www.pedaglab.com/courses/cs5787/</loc>
-  </url><url>
     <loc>https://www.pedaglab.com/people/sarah-johnson/</loc>
   </url><url>
     <loc>https://www.pedaglab.com/people/some-other-person/</loc>
@@ -181,5 +179,11 @@
     <loc>https://www.pedaglab.com/people/</loc>
   </url><url>
     <loc>https://www.pedaglab.com/author/perception-enabled-digital-agriculture-lab/</loc>
+  </url><url>
+    <loc>https://www.pedaglab.com/courses/sysen5411/</loc>
+  </url><url>
+    <loc>https://www.pedaglab.com/courses/sysen5410/</loc>
+  </url><url>
+    <loc>https://www.pedaglab.com/courses/sysen5412/</loc>
   </url>
 </urlset>

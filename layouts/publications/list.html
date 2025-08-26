@@ -17,11 +17,12 @@
           <div class="row g-0">
             <div class="col-md-10">
               <div class="card-body p-4">
-                <h5 class="card-title text-primary mb-2">{{ .Title }}</h5>
+                <h5 class="card-title text-primary mb-2"><a href="{{ .RelPermalink }}" class="text-primary" style="text-decoration: none;">{{ .Title }}</a></h5>
                 <p class="text-secondary mb-1"><em>{{ delimit .Params.authors ", " }}</em></p>
                 <p class="text-success mb-2"><strong>{{ .Params.publication | default "" }}</strong>, {{ .PublishDate.Format "2006" }}</p>
                 <p class="card-text text-secondary mb-3">{{ .Params.summary | default .Summary }}</p>
                 <div class="publication-links">
+                  <a href="{{ .RelPermalink }}" class="btn btn-primary btn-sm me-2">View Details</a>
                   {{ if .Params.url_pdf }}
                   <a href="{{ .Params.url_pdf }}" class="btn btn-outline btn-sm me-2" target="_blank" rel="noopener">PDF</a>
                   {{ end }}
@@ -37,9 +38,9 @@
             <div class="col-md-2">
               <div class="publication-image h-100 p-4">
                 {{ with .Params.image }}
-                <img src="{{ printf "/media/publications/%s" .filename }}" alt="{{ $.Title }}" class="img-fluid h-100 w-100 rounded" style="object-fit: cover;">
+                <a href="{{ $.RelPermalink }}"><img src="{{ printf "/media/publications/%s" .filename }}" alt="{{ $.Title }}" class="img-fluid h-100 w-100 rounded" style="object-fit: cover;"></a>
                 {{ else }}
-                <img src="/media/publications/default.jpg" alt="{{ $.Title }}" class="img-fluid h-100 w-100 rounded" style="object-fit: cover;">
+                <a href="{{ $.RelPermalink }}"><img src="/media/publications/default.jpg" alt="{{ $.Title }}" class="img-fluid h-100 w-100 rounded" style="object-fit: cover;"></a>
                 {{ end }}
               </div>
             </div>

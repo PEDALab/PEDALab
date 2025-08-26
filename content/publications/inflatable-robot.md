@@ -34,7 +34,7 @@ tags:
 - Mobile Robotics
 featured: true
 
-url_pdf: ''
+url_pdf: 'https://ieeexplore.ieee.org/abstract/document/9494648'
 url_dataset: ''
 url_poster: ''
 url_project: '/projects/martha'

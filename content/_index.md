@@ -26,11 +26,11 @@ navigation:
     link: "/courses"
 
 featured_projects:
-  - path: "projects/crop-monitoring"
   - path: "projects/agxrp"
+  - path: "projects/grapesam"
 featured_publications:
-  - path: "publications/deep-learning-crop-disease-2024"
-  - path: "publications/computer-vision-yield-estimation-2024"
+  - path: "publications/pruning-weight"
+  - path: "publications/crop-coefficient"
 featured_news:
   - path: "news/new-grant-2025"
 featured_team:

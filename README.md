@@ -85,29 +85,369 @@ perception-enabled-digital-agriculture-lab/
 - **Custom SCSS**: Additional styling for dark theme
 - **JavaScript**: Interactive filtering and animations
 
-## Content Management
+## Website Blocks and Components Reference
 
-### Adding New Projects
-1. Create a new markdown file in `content/projects/`
-2. Add project metadata in frontmatter
-3. Include project image in `static/media/projects/`
-4. Update project listing if needed
+### Available Page Types
 
-### Adding Publications
+#### 1. **Homepage (_index.md)**
+The homepage uses a custom layout with multiple configurable blocks:
+
+**Frontmatter Configuration:**
+```yaml
+---
+title: "Your Lab Name"
+date: 2022-10-24
+type: home
+layout: home
+
+# Hero Section Block
+hero:
+  text: "Your lab description"
+  image: "/media/lab-hero.png"
+  buttons:
+    - text: "Button Text"
+      link: "/target-page"
+
+# Navigation Block
+navigation:
+  - text: "Menu Item"
+    link: "/page-url"
+
+# Featured Content Blocks
+featured_projects:
+  - path: "projects/agxrp"
+  - path: "projects/grapesam"
+featured_publications:
+  - path: "publications/publication-file"
+featured_news:
+  - path: "news/news-article"
+featured_team:
+  - path: "people/person-name"
+
+# Carousel Block
+carousel_slides:
+  - title: "Slide Title"
+    description: "Slide description"
+    image: "/media/slide-image.jpg"
+    link: "/target-page"
+    button_text: "Button Text"
+---
+```
+
+**Available Homepage Blocks:**
+- **Hero Section**: Large banner with title, description, image, and action buttons
+- **Quick Stats**: Numerical statistics display (projects, publications, team size, funding)
+- **Featured Projects**: Showcase of selected projects with images and descriptions
+- **Recent Publications**: List of latest research publications
+- **Latest News**: Recent lab announcements and updates
+- **Team Preview**: Grid of team member photos and basic info
+- **Navigation Carousel**: Image-based navigation to major site sections
+
+#### 2. **Project Pages**
+Located in `content/projects/`, each project supports:
+
+**Frontmatter Configuration:**
+```yaml
+---
+title: "Project Title"
+date: "2024-08-01"
+draft: false
+featured: true  # Include in featured projects
+
+# Image Block
+image:
+  filename: "project-image.png"
+  focal_point: "Smart"  # Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+  preview_only: false
+
+# Taxonomy Blocks
+tags:
+  - "Computer Vision"
+  - "Robotics"
+categories:
+  - "Research Projects"
+  - "Outreach Projects"
+
+# Metadata Block
+summary: "Brief project description"
+github: "https://github.com/user/repo"  # Optional
+website: "https://project-site.com"     # Optional
+documentation: "https://docs.site.com"  # Optional
+demo: "https://youtube.com/watch?v=xyz" # Optional
+
+# Team Block
+team_members:
+  - name: "Dr. Name"
+    role: "Role Description"
+---
+```
+
+**Content Blocks Available:**
+- Project overview sections with markdown formatting
+- Image galleries and figures
+- Code snippets with syntax highlighting
+- External links (GitHub, documentation, demos)
+- Team member assignments
+- Related publications references
+
+#### 3. **Publication Pages**
+Located in `content/publications/`, supports academic formatting:
+
+**Frontmatter Configuration:**
+```yaml
+---
+title: "Publication Title"
+authors:
+- "Author Name"
+- "Second Author"
+date: "2024-03-01T00:00:00Z"
+doi: "https://doi.org/10.xxxx/xxxxx"
+publishDate: "2024-03-01T00:00:00Z"
+
+# Publication Type Block
+publication_types: ["2"]  # 0=Uncategorized, 1=Conference, 2=Journal, 3=Preprint, 4=Report, 5=Book, 6=Book section, 7=Thesis, 8=Patent
+
+# Publication Details Block
+publication: "Journal Name"
+publication_short: "J. Abbrev."  # Optional
+abstract: "Full abstract text"
+summary: "Brief summary"
+
+# Links Block
+url_pdf: "https://link-to-pdf.com"
+url_code: "https://github.com/repo"
+url_dataset: "https://data-link.com"
+url_poster: "https://poster-link.com"
+url_project: "/projects/related-project"
+url_slides: "https://slides-link.com"
+url_video: "https://video-link.com"
+
+# Image Block
+image:
+  filename: "publication-figure.png"
+  caption: "Figure caption"
+  focal_point: ""
+  preview_only: false
+
+# Related Content Block
+projects:
+- project-folder-name
+
+# Tags and Categories
+tags:
+- "Research Area"
+categories:
+- "Publications"
+featured: true  # Include in featured publications
+---
+```
+
+#### 4. **News Articles**
+Located in `content/news/`, supports:
+
+**Frontmatter Configuration:**
+```yaml
+---
+title: "News Article Title"
+date: 2025-06-10
+draft: false
+summary: "Brief article summary for listings"
+featured: true  # Optional: include in featured news
+image: "/media/news/article-image.jpg"  # Optional
+tags:
+  - "Grants"
+  - "Awards"
+categories:
+  - "Lab News"
+---
+```
+
+**Content Blocks:**
+- Rich text content with markdown formatting
+- Image embedding and galleries
+- Quote blocks and callouts
+- Links to related projects/publications
+
+#### 5. **People/Team Pages**
+Located in `content/people/` or `content/authors/`, supports:
+
+**Frontmatter Configuration:**
+```yaml
+---
+title: "Dr. Full Name"
+image: "/media/team/photo.jpg"
+role: "advisor"  # advisor, graduate, undergraduate, postdoc, alumni
+position: "Job Title"
+bio: "Brief bio for listings"
+email: "email@cornell.edu"
+website: "https://personal-site.com"  # Optional
+twitter: "username"  # Optional
+github: "username"   # Optional
+linkedin: "profile"  # Optional
+orcid: "0000-0000-0000-0000"  # Optional
+
+# Research Areas Block
+research_interests:
+  - "Research Area 1"
+  - "Research Area 2"
+
+# Education Block
+education:
+  - degree: "Ph.D."
+    institution: "University"
+    year: 2010
+    field: "Field of Study"
+---
+```
+
+**Content Blocks:**
+- Personal biography sections
+- Education history
+- Research interests
+- Current projects
+- Publication lists
+- Teaching responsibilities
+- Contact information
+
+#### 6. **Course Pages**
+Located in `content/courses/`, supports:
+
+**Frontmatter Configuration:**
+```yaml
+---
+title: "Course Code: Course Title"
+semester: "Fall 2024"
+instructor: "Dr. Name"
+credits: 3
+level: "undergraduate"  # or "graduate"
+description: "Course description"
+prerequisites: "Required background"
+
+# Schedule Block
+schedule:
+  - day: "Monday"
+    time: "10:00-11:15 AM"
+    location: "Room 123"
+
+# Materials Block
+textbook: "Required textbook"
+software: ["Software 1", "Software 2"]
+---
+```
+
+### Content Organization Blocks
+
+#### Navigation Menus
+Configure in `config.yaml`:
+```yaml
+languages:
+  en:
+    menu:
+      main:
+        - name: "Menu Item"
+          url: "/page-url/"
+          weight: 1  # Order in menu
+```
+
+#### Site-wide Configuration Blocks
+In `config.yaml`:
+
+**Header Block:**
+```yaml
+params:
+  header:
+    navbar:
+      enable: true
+      align: l  # l, c, r
+      show_logo: true
+      show_search: true
+      show_day_night: true
+```
+
+**Footer Block:**
+```yaml
+params:
+  footer:
+    copyright:
+      notice: "© {year} Lab Name. Licensed under {license}"
+      license:
+        enable: true
+        allow_derivatives: false
+        share_alike: true
+        allow_commercial: false
+```
+
+**Features Block:**
+```yaml
+params:
+  features:
+    syntax_highlighter:
+      enable: true
+      extra_languages: ["r", "latex"]
+    math:
+      enable: true
+    privacy_pack:
+      enable: false
+```
+
+### Styling and Layout Blocks
+
+#### Custom CSS Variables
+Available in layouts for theming:
+```css
+:root {
+  --primary-color: #2E7D32;
+  --secondary-color: #4CAF50;
+  --accent-color: #81C784;
+  --surface-dark: #1E1E1E;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B0B0;
+  --border-color: #333333;
+}
+```
+
+#### Animation Classes
+Available CSS classes:
+- `animate-fade-in-up`: Fade in with upward motion
+- `animate-fade-in`: Simple fade in
+- Various hover effects on cards and buttons
+
+### Content Management
+
+#### Adding New Projects
+1. Create new markdown file in `content/projects/`
+2. Configure frontmatter with project metadata
+3. Add project image to `static/media/projects/`
+4. Use tags and categories for organization
+5. Add team_members block if applicable
+6. Link to related publications in content
+
+#### Adding Publications
 1. Create markdown file in `content/publications/`
-2. Include proper academic formatting
-3. Add links to PDFs and repositories
-4. Update featured publications section
+2. Use proper publication_types classification
+3. Include all relevant URLs (PDF, code, data)
+4. Link to related projects
+5. Add featured: true for homepage showcase
 
-### Adding Team Members
-1. Create profile in `content/authors/`
+#### Adding Team Members
+1. Create profile in `content/people/` or `content/authors/`
 2. Add profile photo to `static/media/team/`
-3. Update people page categories
+3. Set appropriate role for organization
+4. Include research interests and education
+5. Add to featured_team on homepage if desired
 
-### Adding News
-1. Create news article in `content/news/`
+#### Adding News Articles
+1. Create article in `content/news/`
 2. Include publication date and summary
-3. Add to homepage news section if featured
+3. Add relevant tags and categories
+4. Set featured: true for homepage inclusion
+5. Include related project/publication links
+
+#### Adding Course Information
+1. Create course page in `content/courses/`
+2. Include semester and scheduling information
+3. Add prerequisites and materials
+4. Link to related research projects if applicable
 
 ## Deployment Options
 

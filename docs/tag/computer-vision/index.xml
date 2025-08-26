@@ -16,6 +16,13 @@
       <description>We developed a simple and fast way to estimate crop water needs in vineyards using just a smartphone and computer vision instead of expensive sensors.</description>
     </item>
     <item>
+      <title>Inexpensive, Automated Pruning Weight Estimation in Vineyards</title>
+      <link>https://www.pedaglab.com/publications/pruning-weight-estimation/</link>
+      <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.pedaglab.com/publications/pruning-weight-estimation/</guid>
+      <description>We present a low-cost, computer vision-based approach using smartphones and structured light to estimate vineyard pruning weight, outperforming existing methods for VSP vines and extending to HC vines.</description>
+    </item>
+    <item>
       <title>Automated Vineyard Pruning Weight Estimation</title>
       <link>https://www.pedaglab.com/projects/pruning-weight/</link>
       <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
@@ -30,11 +37,11 @@
       <description>ViViD-5K is a large annotated image dataset and segmentation pipeline designed to automate grape cluster closure analysis in vineyards using computer vision.</description>
     </item>
     <item>
-      <title>Computer Vision-Based Yield Estimation for Precision Agriculture</title>
+      <title>Low-Cost, Computer Vision-Based, Prebloom Cluster Count Prediction in Vineyards</title>
       <link>https://www.pedaglab.com/publications/computer-vision-yield-estimation-2024/</link>
       <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
       <guid>https://www.pedaglab.com/publications/computer-vision-yield-estimation-2024/</guid>
-      <description>A computer vision-based deep learning model for accurate and non-invasive crop yield estimation using drone and ground-based imagery, achieving 0.92 R-squared.</description>
+      <description>We developed a computer vision system that uses videos taken with a smartphone to estimate grape yield more accurately and efficiently than traditional manual counting methods.</description>
     </item>
     <item>
       <title>Deep Learning Approaches for Crop Disease Detection in Precision Agriculture</title>

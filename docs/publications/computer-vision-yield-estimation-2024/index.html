@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Computer Vision-Based Yield Estimation for Precision Agriculture | Perception Enabled Digital Agriculture Lab</title>
+    <title>Low-Cost, Computer Vision-Based, Prebloom Cluster Count Prediction in Vineyards | Perception Enabled Digital Agriculture Lab</title>
     
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -210,7 +210,7 @@
       <div class="col-lg-8">
         <article>
           <header class="text-center mb-5">
-            <h1 class="display-4 mb-3">Computer Vision-Based Yield Estimation for Precision Agriculture</h1>
+            <h1 class="display-4 mb-3">Low-Cost, Computer Vision-Based, Prebloom Cluster Count Prediction in Vineyards</h1>
             <div class="text-muted mb-3">
               <i class="fas fa-users me-2"></i>Jonathan Jaramillo, Justine Vanden Heuvel, Kirstin Petersen
               <span class="mx-2">|</span>
@@ -219,87 +219,24 @@
           </header>
           <div class="article-content text-secondary">
             <h2 id="introduction">Introduction</h2>
-<p>Accurate and timely yield estimation is crucial for optimizing agricultural practices, managing resources efficiently, and ensuring food security. Traditional methods, such as manual sampling and farmer surveys, are labor-intensive, time-consuming, and often lack precision. The integration of computer vision and remote sensing technologies offers a promising alternative for non-invasive and high-throughput yield prediction.</p>
+<p>Traditional approaches to estimating grape yield typically involve manual cluster counts on a subset of vines, which are then scaled to the whole vineyard. These methods are time-consuming, labor-intensive, and prone to high variability depending on who performs the counts and which vines are selected. Although advanced sensing systems such as LiDAR and multispectral cameras have been explored, their high cost and complexity limit widespread adoption, particularly for smaller vineyard operations.</p>
 <h2 id="methodology">Methodology</h2>
-<h3 id="deep-learning-model">Deep Learning Model</h3>
-<p>Our approach utilizes a deep learning model based on a modified YOLO (You Only Look Once) architecture, tailored for agricultural imagery. The model is designed to:</p>
-<ol>
-<li><strong>Detect and Localize</strong>: Identify individual fruits, grains, or plants within the images.</li>
-<li><strong>Count and Classify</strong>: Accurately count detected objects and classify them by size or maturity.</li>
-<li><strong>Regress Yield</strong>: Predict the total yield based on object counts, sizes, and other relevant features.</li>
-</ol>
-<h3 id="data-acquisition-and-annotation">Data Acquisition and Annotation</h3>
-<p>We collected a diverse dataset using:</p>
-<ul>
-<li><strong>Drone-based imagery</strong>: High-resolution RGB and multispectral images captured at various altitudes.</li>
-<li><strong>Ground-based sensors</strong>: Close-up images from automated robots and handheld devices.</li>
-</ul>
-<p>The dataset was meticulously annotated with bounding boxes for individual objects and overall yield values for each plot.</p>
-<h3 id="training-and-validation">Training and Validation</h3>
-<p>Training involved:</p>
-<ul>
-<li>Transfer learning from pre-trained models on large-scale object detection datasets.</li>
-<li>Custom loss functions to optimize for both detection and regression tasks.</li>
-<li>Cross-validation on independent datasets to ensure generalization.</li>
-</ul>
+<p>The authors developed a low-cost system that employs a smartphone camera, gimbal, and portable LED lights to capture nighttime video of vines before bloom. This stage of growth was chosen because clusters are visible while foliage remains sparse, increasing detection accuracy and making early yield estimation possible. The videos were processed using a Faster R-CNN object detection model with a ResNet50 backbone, combined with Kernelized Correlation Filter tracking to prevent double counting. The network was pretrained on the COCO dataset and then fine-tuned on thousands of labeled grapevine images. Automated counts were calibrated using a small number of manual counts to account for occlusion and counting errors.</p>
 <h2 id="results">Results</h2>
-<h3 id="prediction-accuracy">Prediction Accuracy</h3>
-<p>Our model achieved high accuracy in yield prediction across different crops:</p>
-<table>
-  <thead>
-      <tr>
-          <th>Crop Type</th>
-          <th>R-squared</th>
-          <th>MAE (kg/ha)</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Corn</td>
-          <td>0.91</td>
-          <td>150</td>
-      </tr>
-      <tr>
-          <td>Wheat</td>
-          <td>0.93</td>
-          <td>120</td>
-      </tr>
-      <tr>
-          <td>Apples</td>
-          <td>0.92</td>
-          <td>50</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="real-time-performance">Real-time Performance</h3>
-<p>The model is optimized for real-time inference, processing images at 30 frames per second on a standard GPU, enabling on-the-go yield mapping.</p>
+<p>Experiments were conducted at Cornell’s teaching vineyard across two growing seasons on Riesling and Pinot noir vines. Results demonstrated that the automated method significantly outperformed traditional manual counts. On average, the vision-based system achieved an error of 4.9 percent compared to 7.9 percent for manual methods, and its maximum error was nearly half that of human counters. Importantly, the automated approach was more consistent, with less variability tied to which vines were sampled. Labor efficiency was also dramatically improved: achieving equivalent accuracy through manual methods required counting more than fifty panels, while the automated method required calibration on only about twenty panels.</p>
 <h2 id="discussion">Discussion</h2>
-<h3 id="advantages">Advantages</h3>
-<ul>
-<li><strong>Non-invasive</strong>: Eliminates the need for destructive sampling.</li>
-<li><strong>High-throughput</strong>: Processes large areas quickly and efficiently.</li>
-<li><strong>Early Prediction</strong>: Provides yield estimates at early growth stages, allowing for timely interventions.</li>
-<li><strong>Scalability</strong>: Easily deployable on various platforms, from drones to ground robots.</li>
-</ul>
+<p>The study highlights that counting clusters directly is more reliable than counting shoots, and that the automated method generalizes across grape cultivars and growing seasons. Beyond technical accuracy, the system offers practical advantages in cost, ease of use, and scalability. The entire setup cost only a few hundred dollars, a fraction of other advanced sensing systems, and videos could be processed efficiently on standard hardware or cloud platforms.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>This research demonstrates the effectiveness of computer vision and deep learning for accurate and efficient crop yield estimation. The proposed system offers a valuable tool for farmers and agricultural researchers to optimize resource management, improve decision-making, and enhance overall agricultural productivity.</p>
-<h2 id="acknowledgments">Acknowledgments</h2>
-<p>We thank the Cornell University Agricultural Experiment Station and the participating farms for their support. This work was partially funded by the USDA National Institute of Food and Agriculture.</p>
-<h2 id="references">References</h2>
-<p>[1] Lee, D., et al. &ldquo;Drone-based image analysis for precision agriculture.&rdquo; <em>Remote Sensing Applications: Society and Environment</em>, vol. 25, 2022.</p>
-<p>[2] Wilson, L., et al. &ldquo;Deep learning for agricultural applications: A review.&rdquo; <em>Computers and Electronics in Agriculture</em>, vol. 178, 2021.</p>
-<p>[3] Taylor, R., et al. &ldquo;Robotics in agriculture: Current trends and future challenges.&rdquo; <em>Journal of Agricultural Engineering</em>, vol. 52, no. 3, 2021.</p>
 
           </div>
           <div class="publication-links text-center mt-5">
             
-            <a href="https://example.com/computer-vision-yield-estimation-paper.pdf" class="btn btn-primary me-3" target="_blank" rel="noopener">View PDF</a>
+            <a href="https://www.frontiersin.org/journals/agronomy/articles/10.3389/fagro.2021.648080/full" class="btn btn-primary me-3" target="_blank" rel="noopener">View PDF</a>
             
             
-            <a href="https://github.com/your-lab/computer-vision-yield-estimation" class="btn btn-outline me-3" target="_blank" rel="noopener">GitHub Code</a>
             
-            
-            <a href="/projects/yield-prediction" class="btn btn-outline" target="_blank" rel="noopener">Project Page</a>
+            <a href="/projects/yield_estimation" class="btn btn-outline" target="_blank" rel="noopener">Project Page</a>
             
           </div>
         </article>

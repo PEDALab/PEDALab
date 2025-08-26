@@ -1,5 +1,5 @@
 ---
-title: "Computer Vision-Based Yield Estimation for Precision Agriculture"
+title: "Low-Cost, Computer Vision-Based, Prebloom Cluster Count Prediction in Vineyards"
 authors:
 - Jonathan Jaramillo 
 - Justine Vanden Heuvel
@@ -17,35 +17,34 @@ publishDate: "2021-04-07T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Journal of Agricultural Robotics, 2*(1)"
-publication_short: "*J. Agric. Robot.*"
+publication: "Frontiers in Agronomy"
+# publication_short: "*J. Agric. Robot.*"
 
-abstract: "This study explores the application of computer vision techniques for accurate and non-invasive yield estimation in various agricultural settings. We propose a novel deep learning model that leverages high-resolution imagery captured by drones and ground-based sensors to predict crop yield at different growth stages. The model incorporates a multi-task learning approach, simultaneously performing object detection of individual fruits/grains and regression for total yield estimation. Our experimental results demonstrate a significant improvement in yield prediction accuracy compared to traditional methods, with an average R-squared value of 0.92 across diverse crop types such as corn, wheat, and apples. The system is designed for real-time processing, enabling farmers to make timely decisions regarding irrigation, fertilization, and harvesting. Key contributions include: (1) a robust dataset of annotated images for yield estimation, (2) a deep learning architecture optimized for agricultural imaging, and (3) a comprehensive evaluation of the system's performance under varying environmental conditions."
+abstract: "Traditional methods for estimating the number of grape clusters in a vineyard generally involve manually counting the number of clusters per vine in a subset of the vineyard and scaling by the total number of vines; a technique that can be laborious, costly, and with an accuracy that depends on the size of the sample. We demonstrate that traditional cluster counting has a high variance in yield estimate accuracy and is highly sensitive to the particular counter and choice of the subset of counted vines. We propose a simple computer vision-based method for improving the reliability of these yield estimates using cheap and easily accessible hardware for growers. This method detects, tracks, and counts clusters and shoots in videos collected using a smartphone camera that is driven or walked through the vineyard at night. With a random selection of calibration data, this method achieved an average cluster count error of 4.9% across two growing seasons and two cultivars by detecting and counting clusters. Traditional methods yielded an average cluster count error of 7.9% across the same dataset. Moreover, the proposed method yielded a maximum error of 12.6% while the traditional method yielded a maximum error of 23.5%. The proposed method can be deployed before flowering, while the canopy is sparse, which improves maximum visibility of clusters and shoots, generalizability across different cultivars and growing seasons, and earlier yield estimates compared to prior work in the area."
 
 # Summary. An optional shortened abstract.
-summary: "A computer vision-based deep learning model for accurate and non-invasive crop yield estimation using drone and ground-based imagery, achieving 0.92 R-squared."
+summary: "We developed a computer vision system that uses videos taken with a smartphone to estimate grape yield more accurately and efficiently than traditional manual counting methods."
 
 tags:
 - Computer Vision
 - Yield Estimation
 - Precision Agriculture
-- Deep Learning
-- Robotics
+- Viticulture
 featured: true
 
-url_pdf: 'https://example.com/computer-vision-yield-estimation-paper.pdf' # Placeholder for actual PDF
-url_code: 'https://github.com/your-lab/computer-vision-yield-estimation' # Placeholder for actual GitHub repo
+url_pdf: 'https://www.frontiersin.org/journals/agronomy/articles/10.3389/fagro.2021.648080/full' # Placeholder for actual PDF
+# url_code: 'https://github.com/your-lab/computer-vision-yield-estimation' # Placeholder for actual GitHub repo
 url_dataset: ''
 url_poster: ''
-url_project: '/projects/yield-prediction'
+url_project: '/projects/yield_estimation'
 url_slides: ''
 url_source: ''
 url_video: ''
 
 # Featured image
 image:
-  filename: "Unknown.jpeg"
-  caption: 'Computer vision system for yield estimation'
+  filename: "yield-estimation.png"
+  caption: 'Computer vision system for yield estimation in vineyards'
   focal_point: ""
   preview_only: false
 
@@ -67,74 +66,24 @@ slides: ""
 
 ## Introduction
 
-Accurate and timely yield estimation is crucial for optimizing agricultural practices, managing resources efficiently, and ensuring food security. Traditional methods, such as manual sampling and farmer surveys, are labor-intensive, time-consuming, and often lack precision. The integration of computer vision and remote sensing technologies offers a promising alternative for non-invasive and high-throughput yield prediction.
+Traditional approaches to estimating grape yield typically involve manual cluster counts on a subset of vines, which are then scaled to the whole vineyard. These methods are time-consuming, labor-intensive, and prone to high variability depending on who performs the counts and which vines are selected. Although advanced sensing systems such as LiDAR and multispectral cameras have been explored, their high cost and complexity limit widespread adoption, particularly for smaller vineyard operations.
 
 ## Methodology
 
-### Deep Learning Model
+The authors developed a low-cost system that employs a smartphone camera, gimbal, and portable LED lights to capture nighttime video of vines before bloom. This stage of growth was chosen because clusters are visible while foliage remains sparse, increasing detection accuracy and making early yield estimation possible. The videos were processed using a Faster R-CNN object detection model with a ResNet50 backbone, combined with Kernelized Correlation Filter tracking to prevent double counting. The network was pretrained on the COCO dataset and then fine-tuned on thousands of labeled grapevine images. Automated counts were calibrated using a small number of manual counts to account for occlusion and counting errors.
 
-Our approach utilizes a deep learning model based on a modified YOLO (You Only Look Once) architecture, tailored for agricultural imagery. The model is designed to:
-
-1. **Detect and Localize**: Identify individual fruits, grains, or plants within the images.
-2. **Count and Classify**: Accurately count detected objects and classify them by size or maturity.
-3. **Regress Yield**: Predict the total yield based on object counts, sizes, and other relevant features.
-
-### Data Acquisition and Annotation
-
-We collected a diverse dataset using:
-- **Drone-based imagery**: High-resolution RGB and multispectral images captured at various altitudes.
-- **Ground-based sensors**: Close-up images from automated robots and handheld devices.
-
-The dataset was meticulously annotated with bounding boxes for individual objects and overall yield values for each plot.
-
-### Training and Validation
-
-Training involved:
-- Transfer learning from pre-trained models on large-scale object detection datasets.
-- Custom loss functions to optimize for both detection and regression tasks.
-- Cross-validation on independent datasets to ensure generalization.
 
 ## Results
 
-### Prediction Accuracy
-
-Our model achieved high accuracy in yield prediction across different crops:
-
-| Crop Type | R-squared | MAE (kg/ha) |
-|-----------|-----------|-------------|
-| Corn | 0.91 | 150 |
-| Wheat | 0.93 | 120 |
-| Apples | 0.92 | 50 |
-
-### Real-time Performance
-
-The model is optimized for real-time inference, processing images at 30 frames per second on a standard GPU, enabling on-the-go yield mapping.
+Experiments were conducted at Cornell’s teaching vineyard across two growing seasons on Riesling and Pinot noir vines. Results demonstrated that the automated method significantly outperformed traditional manual counts. On average, the vision-based system achieved an error of 4.9 percent compared to 7.9 percent for manual methods, and its maximum error was nearly half that of human counters. Importantly, the automated approach was more consistent, with less variability tied to which vines were sampled. Labor efficiency was also dramatically improved: achieving equivalent accuracy through manual methods required counting more than fifty panels, while the automated method required calibration on only about twenty panels.
 
 ## Discussion
 
-### Advantages
-
-- **Non-invasive**: Eliminates the need for destructive sampling.
-- **High-throughput**: Processes large areas quickly and efficiently.
-- **Early Prediction**: Provides yield estimates at early growth stages, allowing for timely interventions.
-- **Scalability**: Easily deployable on various platforms, from drones to ground robots.
+The study highlights that counting clusters directly is more reliable than counting shoots, and that the automated method generalizes across grape cultivars and growing seasons. Beyond technical accuracy, the system offers practical advantages in cost, ease of use, and scalability. The entire setup cost only a few hundred dollars, a fraction of other advanced sensing systems, and videos could be processed efficiently on standard hardware or cloud platforms.
 
 ## Conclusion
 
 This research demonstrates the effectiveness of computer vision and deep learning for accurate and efficient crop yield estimation. The proposed system offers a valuable tool for farmers and agricultural researchers to optimize resource management, improve decision-making, and enhance overall agricultural productivity.
-
-## Acknowledgments
-
-We thank the Cornell University Agricultural Experiment Station and the participating farms for their support. This work was partially funded by the USDA National Institute of Food and Agriculture.
-
-## References
-
-[1] Lee, D., et al. "Drone-based image analysis for precision agriculture." *Remote Sensing Applications: Society and Environment*, vol. 25, 2022.
-
-[2] Wilson, L., et al. "Deep learning for agricultural applications: A review." *Computers and Electronics in Agriculture*, vol. 178, 2021.
-
-[3] Taylor, R., et al. "Robotics in agriculture: Current trends and future challenges." *Journal of Agricultural Engineering*, vol. 52, no. 3, 2021.
-
 
 
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Prebloom Cluster Count Prediction in Vineyards | Perception Enabled Digital Agriculture Lab</title>
+    <title>Nils Napp | Perception Enabled Digital Agriculture Lab</title>
     
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -204,193 +204,22 @@
     
     <main>
         
-<div class="container-fluid py-5">
   <div class="container">
-    
-    <div class="row mb-5">
-      <div class="col-12">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/projects">Projects</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Prebloom Cluster Count Prediction in Vineyards</li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-
+    <h1>Nils Napp</h1>
     <div class="row">
       
-      <div class="col-lg-8">
-        <div class="project-header mb-4">
-          <h1 class="display-4 mb-3">Prebloom Cluster Count Prediction in Vineyards</h1>
-          <div class="project-meta mb-4">
-            <div class="d-flex align-items-center mb-2">
-              <i class="fas fa-calendar me-2"></i>
-              <span>April 2021 - Present</span>
-            </div>
-            <div class="project-tags">
-              
-              <span class="badge bg-primary me-2">computer vision</span>
-              
-            </div>
-          </div>
-          
-          <div class="project-image mb-4">
-            <img src="/media/projects/yield-estimation.png" alt="Prebloom Cluster Count Prediction in Vineyards" class="img-fluid rounded">
-          </div>
-          
-        </div>
-
-        <div class="project-content">
-          <h2 id="overview">Overview</h2>
-<p>This project focuses on a very practical problem in vineyard management: how to estimate grape yield earlier and more accurately without expensive equipment or hours of manual labor. Traditional yield prediction often involves manually counting grape clusters in a sample of vines and scaling it up to the whole vineyard. This is not only time-consuming, but also introduces a lot of human error and variance.</p>
-<p>Our approach uses off-the-shelf smartphones, basic lighting equipment, and a custom computer vision pipeline to automate the process. A grower (or a robot or ATV) walks or drives through the vineyard at night with the phone recording video of the vines. These videos are then run through a machine learning model that detects and tracks grape clusters and shoots to estimate total yield. By doing this early in the season—before the canopy fully closes—we get better visibility and can provide farmers with more time to make informed management decisions.</p>
-<h2 id="objectives">Objectives</h2>
-<ul>
-<li>Reduce the cost and labor involved in vineyard yield estimation.</li>
-<li>Provide early-season yield estimates before canopy closure.</li>
-<li>Demonstrate that smartphones and open-source tools are sufficient for practical agricultural AI.</li>
-</ul>
-<h2 id="description">Description</h2>
-<p>The cluster count pipeline is based on a Faster R-CNN object detection network paired with a simple object tracking system using Kernelized Correlation Filters. The video collection is straightforward: a smartphone like the iPhone XR records at 240 fps while mounted on a gimbal (for stability) and equipped with battery-powered LED lights to ensure consistent nighttime lighting.</p>
-<p>After recording, the software counts visible clusters and calibrates the final estimate based on a few manually counted panels. Compared to traditional methods, our approach cut the mean cluster count error from around 7.9% to under 5%, with lower max errors and much tighter error distributions. We also found that early-stage imagery (before flowering) generalizes well across grape cultivars, reducing the need for extensive retraining.</p>
-<h2 id="impact">Impact</h2>
-<p>This project shows how accessible tools can replace expensive systems in precision agriculture. It brings early-season decision support to growers without the need for costly sensors or robotics. For small- and medium-sized vineyards, this could mean more efficient labor planning, fewer surprises at harvest, and better resource allocation overall. We&rsquo;re also pushing to make the system open and easy to adopt through shareable models and pre-trained weights.</p>
-<h2 id="future-work">Future Work</h2>
-<ul>
-<li>Improve the model&rsquo;s robustness across different lighting and weather conditions.</li>
-<li>Expand training data to more cultivars and regions.</li>
-<li>Integrate directly with vineyard management software.</li>
-<li>Explore alternative object detection models for faster or more accurate inference.</li>
-<li>Open-source the labeling datasets to support community contributions.</li>
-</ul>
-
-        </div>
-      </div>
-
-      
-      <div class="col-lg-4">
-        <div class="project-sidebar">
-          
-          
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title mb-3">Team Members</h5>
-              <ul class="list-unstyled">
-                
-                <li class="mb-2">
-                  <strong class="text-primary">Jonathan Jaramillo</strong>
-                  <br>
-                  <small class="text-secondary">Lead Developer and Field Deployment</small>
-                </li>
-                
-                <li class="mb-2">
-                  <strong class="text-primary">Justine Vanden Heuvel</strong>
-                  <br>
-                  <small class="text-secondary">Viticulture Expert and Advisor</small>
-                </li>
-                
-                <li class="mb-2">
-                  <strong class="text-primary">Kirstin H. Petersen</strong>
-                  <br>
-                  <small class="text-secondary">Principal Investigator</small>
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-          
-
-          
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title mb-3">Project Links</h5>
-              <div class="d-grid gap-2">
-                
-                
-                
-                
-              </div>
-            </div>
-          </div>
-
-          
-          
-          
+        <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title mb-3">Related Publications</h5>
-              <ul class="list-unstyled">
-                
-                <li class="mb-2">
-                  <a href="/publications/computer-vision-yield-estimation-2024/" class="text-decoration-none">
-                    <strong>Low-Cost, Computer Vision-Based, Prebloom Cluster Count Prediction in Vineyards</strong>
-                  </a>
-                  <br>
-                  <small class="text-muted"></small>
-                </li>
-                
-              </ul>
+              <h5 class="card-title">Inexpensive, Automated Pruning Weight Estimation in Vineyards</h5>
+              <p class="card-text">We present a low-cost, computer vision-based approach using smartphones and structured light to estimate vineyard pruning weight, outperforming existing methods for VSP vines and extending to HC vines.</p>
+              <a href="/publications/pruning-weight-estimation/" class="btn btn-primary">Read More</a>
             </div>
           </div>
-          
         </div>
-      </div>
+      
     </div>
   </div>
-</div>
-
-<style>
-.project-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.project-content {
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-
-.project-content h2 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-}
-
-.project-content h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-}
-
-.project-sidebar .card {
-  border: 1px solid var(--border-color);
-  background: var(--surface-dark);
-}
-
-.project-sidebar .card-title {
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 0.5rem;
-}
-
-.breadcrumb {
-  background: transparent;
-  padding: 0;
-  margin-bottom: 1rem;
-}
-
-.breadcrumb-item a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.breadcrumb-item.active {
-  color: var(--text-secondary);
-}
-</style>
 
     </main>
 
